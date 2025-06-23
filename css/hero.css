@@ -184,9 +184,14 @@
     align-items: center;
     margin: auto;
   }
+  .mobileSearchBar {
+    align-items: center;
+    direction: rtl;
+  }
+
   #searchLogo {
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
   }
 }
 
