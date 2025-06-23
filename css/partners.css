@@ -1,0 +1,27 @@
+#partners {
+  max-width: 1350px;
+  width: 100%;
+  margin: auto;
+  margin-top: 45px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.ServicesHead h1 span {
+  color: #4da05b;
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .ServicesHead h1 {
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .ServicesHead p {
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}

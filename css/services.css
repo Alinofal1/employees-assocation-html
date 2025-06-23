@@ -1,0 +1,44 @@
+.services {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.ServicesHead {
+  width: 100%;
+  text-align: center;
+}
+
+.ServicesHead h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.ServicesHead p {
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.services h1 span {
+  color: #4da05b;
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .ServicesHead h1 {
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .ServicesHead p {
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}

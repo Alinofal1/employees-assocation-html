@@ -1,0 +1,280 @@
+#carCard {
+  max-width: 1350px;
+  width: 100%;
+  height: 477px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #676767, #ffffff, #f2f2f2);
+}
+
+#carContent {
+  width: 1241px;
+  margin: 64px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#carSlider {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 50px;
+}
+
+#carSlider div {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+#image-wrapper {
+  position: relative;
+  width: 535px;
+  height: 342px;
+}
+
+#car-background {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff52;
+  border-radius: 46px;
+  height: 100%;
+  z-index: 0;
+}
+
+#image-wrapper img {
+  position: absolute;
+  object-fit: contain;
+  top: 32px;
+  width: 100%;
+  z-index: 1;
+  transform: translateX(-5%);
+}
+
+#carText {
+  width: 546px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 156%;
+  text-align: end;
+}
+
+#pal-service {
+  font-weight: 400;
+  font-size: 20px;
+  color: #656565;
+  margin-top: 8px;
+  margin-bottom: 53px;
+}
+
+.pal-service2 {
+  width: 100%;
+  max-width: 477px;
+  font-weight: 500;
+  font-size: 23px;
+  text-align: end;
+  direction: ltr;
+  margin: 0 auto;
+}
+
+/*  Mobile View  */
+@media (max-width: 767px) {
+  #carSlider {
+    display: none;
+  }
+
+  #car-background {
+    display: none;
+  }
+
+  #carCard {
+    max-width: 400px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0 auto;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #676767, #a7a7a7, #f2f2f2);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #carContent {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+
+  #image-wrapper {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    position: relative;
+  }
+
+  #image-wrapper img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: contain;
+  }
+
+  #carText {
+    width: 100%;
+    max-width: 346px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 156%;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    left: auto;
+    z-index: 2;
+  }
+
+  #pal-service {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto 30px auto;
+    font-weight: 200;
+    font-size: 15px;
+    color: #656565;
+  }
+
+  .pal-service2 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+/*  Tablet screen  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #carCard {
+    width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(to right, #676767, #ffffff, #f2f2f2);
+    box-sizing: border-box;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #carContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #carSlider {
+    display: none;
+  }
+
+  #image-wrapper {
+    width: 315px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  #car-background {
+    display: none;
+  }
+
+  #image-wrapper img {
+    top: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  #carText {
+    width: 100%;
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  #pal-service {
+    font-weight: 400;
+    font-size: 15px;
+    color: #656565;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .pal-service2 {
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+/*  Small laptop screen  */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #carCard {
+    width: 1000px;
+    height: 390px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  #carContent {
+    width: 950px;
+  }
+
+  #carSlider {
+    display: flex;
+    width: 35px;
+    margin-right: 1px;
+    margin-left: 20px;
+  }
+
+  #image-wrapper {
+    width: 400px;
+    height: 260px;
+  }
+
+  #carText {
+    width: 286px;
+    font-size: 17.6px;
+  }
+
+  #pal-service {
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 33px;
+  }
+}

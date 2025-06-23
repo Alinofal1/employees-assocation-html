@@ -1,0 +1,16 @@
+/* @import "tailwindcss"; */
+@import url("./cssFiles.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal";
+}
+
+.container {
+  width: 100%;
+}

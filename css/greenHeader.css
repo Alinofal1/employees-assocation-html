@@ -1,0 +1,45 @@
+.greenHeader {
+  border-width: 0.5px 0px 0.5px 0px;
+  border-style: solid;
+  border-color: #8c8c8c80;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.greenColor {
+  width: 960px;
+  height: 166px;
+  background-color: #4da05b;
+  position: relative;
+}
+
+/* gray color */
+.gray1,
+.gray2,
+.gray3 {
+  position: absolute;
+  height: 100%;
+  background-color: #d8d8d8;
+}
+
+.gray1 {
+  width: 8px;
+  left: 905px;
+}
+
+.gray2 {
+  width: 16px;
+  left: 918px;
+}
+
+.gray3 {
+  width: 22px;
+  left: 939px;
+}
+
+/* Green Header Title */
+.greenTitle {
+  width: 520px;
+  direction: rtl;
+  margin-right: 283px;
+}

@@ -1,0 +1,146 @@
+#ServicesCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.cardContent {
+  width: 659px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  border: 1px solid #1111111a;
+  border-radius: 30px;
+}
+
+.cardContent img {
+  width: 132px;
+  height: 132px;
+  margin: 37px 43px 37px;
+}
+
+#cardText {
+  width: 373px;
+  text-align: right;
+}
+
+#cardText h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#cardText p {
+  font-weight: 300;
+  font-size: 15px;
+  width: 370px;
+  line-height: 204%;
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  #ServicesCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardContent {
+    width: 90vw;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #1111111a;
+    border-radius: 30px;
+  }
+  .cardContent img {
+    width: 112px;
+    height: 100%;
+  }
+
+  #cardText {
+    width: 373px;
+    text-align: center;
+  }
+  #cardText h1 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 30px;
+  }
+  #cardText p {
+    padding: 20px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+  }
+}
+
+/* Tablet screen */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #ServicesCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin: 20px 20px;
+  }
+
+  .cardContent {
+    width: 390px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: 1px solid #1111111a;
+    border-radius: 30px;
+  }
+
+  .cardContent img {
+    width: 80px;
+    height: 80px;
+    margin: 37px 20px;
+    padding: 0;
+  }
+
+  #cardText h1 {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  #cardText p {
+    font-weight: 200;
+    font-size: 10px;
+    width: 280px;
+    line-height: 204%;
+  }
+}
+
+/* Small laptop screen */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #ServicesCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 30px 20px;
+  }
+
+  .cardContent {
+    width: 559px;
+  }
+
+  .cardContent img {
+    width: 125px;
+    height: 125px;
+    margin: 37px 25px 37px;
+  }
+
+  #cardText {
+    width: 330px;
+  }
+
+  #cardText p {
+    width: 350px;
+  }
+}
