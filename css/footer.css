@@ -101,6 +101,10 @@ body {
 @media (max-width: 767px) {
   #footerList {
     flex-wrap: wrap;
+    display: flex;
+    gap: 17px;
+    margin-bottom: 17px;
+    margin-top: 25px;
   }
 
   #footerList li {
