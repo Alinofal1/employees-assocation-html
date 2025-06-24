@@ -23,11 +23,11 @@ body {
 
 #footerList {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 43px;
-  margin-bottom: 25px;
+  gap: 37px;
+  margin-bottom: 27px;
+  margin-top: 25px;
 }
 
 #footerList li {
@@ -102,7 +102,11 @@ body {
 @media (max-width: 767px) {
   #footerList {
     margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px;
   }
+
   #footerList li {
     font-size: 15px;
   }
@@ -123,6 +127,11 @@ body {
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
+  #footerList {
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0 15px;
+  }
   #footerBottom {
     width: 400px;
     display: flex;
@@ -139,11 +148,9 @@ body {
 
 /* Small laptop Screen */
 @media (min-width: 1025px) and (max-width: 1280px) {
-  #footerBottom {
-    width: 800px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
+  #footerList {
+    flex-wrap: wrap;
+    gap: 30px;
     padding: 0 15px;
   }
 }
