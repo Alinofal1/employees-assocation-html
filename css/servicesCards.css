@@ -87,7 +87,7 @@
   }
 
   .cardContent {
-    width: 390px;
+    width: 350px;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -108,9 +108,9 @@
   }
 
   #cardText p {
-    font-weight: 200;
+    font-weight: 400;
     font-size: 10px;
-    width: 280px;
+    width: 220px;
     line-height: 204%;
   }
 }
@@ -127,7 +127,7 @@
   }
 
   .cardContent {
-    width: 559px;
+    width: 459px;
   }
 
   .cardContent img {
@@ -141,6 +141,6 @@
   }
 
   #cardText p {
-    width: 350px;
+    width: 280px;
   }
 }
