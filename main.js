@@ -152,14 +152,16 @@ newsData.forEach((item) => {
   const card = document.createElement("div");
   card.className = "newsCardsContent";
   card.innerHTML = `
-    <img src="${item.img}" alt="${item.title}" class="newsCardsImage" />
-    <div class="newsCardText">
-      <h1>${item.title}</h1>
-      <p class="date">${item.date}</p>
-      <p class="newsPara">
-        ${item.desc} <span>معرفة المزيد</span>
-      </p>
-    </div>
+    <a href="#" class="newsCardLink">
+      <img src="${item.img}" alt="${item.title}" class="newsCardsImage" />
+      <div class="newsCardText">
+        <h1>${item.title}</h1>
+        <p class="date">${item.date}</p>
+        <p class="newsPara">
+          ${item.desc} <span>معرفة المزيد</span>
+        </p>
+      </div>
+    </a>
   `;
   newsCards.appendChild(card);
 });
