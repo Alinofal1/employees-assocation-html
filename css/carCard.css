@@ -58,10 +58,10 @@
 
 #carText {
   width: 546px;
+  margin-right: 45px;
   font-weight: 700;
   font-size: 27px;
   line-height: 156%;
-  text-align: end;
 }
 
 #pal-service {
@@ -111,7 +111,7 @@
     width: 100%;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -188,7 +188,7 @@
   #carContent {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 20px;
   }

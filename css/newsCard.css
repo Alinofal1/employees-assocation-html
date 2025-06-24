@@ -46,8 +46,6 @@
 }
 
 .newsCardsImage {
-  width: 387px;
-  height: 273px;
   border-radius: 15px;
   object-fit: cover;
   max-width: 100%;
@@ -59,6 +57,7 @@
   margin: auto;
   margin-top: 10px;
   box-sizing: border-box;
+  text-align: right;
 }
 
 .newsCardText h1 {

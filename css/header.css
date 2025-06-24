@@ -111,6 +111,135 @@ body {
   cursor: pointer;
 }
 
+/* mobile list*/
+#mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  overflow-y: auto;
+  display: none;
+  box-sizing: border-box;
+}
+
+#mobileMenu.show {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.internalClose {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.internalClose svg {
+  cursor: pointer;
+}
+
+.mobileSearchBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.mobileSearchBar input {
+  flex: 1;
+  outline: none;
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+#searchLogo {
+  background-color: #be2631;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchLogo img {
+  width: 21px;
+  height: 21px;
+}
+
+#searchLogo:hover {
+  background-color: #a9212a;
+  cursor: pointer;
+}
+
+#mobileMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#mobileMenu li {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#mobileMenu li a {
+  text-decoration: none;
+  color: black;
+}
+#mobileMenu li a:hover {
+  color: #be2631;
+  transition: color 0.3s ease;
+}
+
+#mobileMenu li:hover {
+  color: #be2631;
+}
+
+.sideImg {
+  width: 150px;
+  border: 1px solid #4da05b;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sideImg:hover {
+  cursor: pointer;
+}
+
+.mobileUl {
+  margin-top: 100px;
+}
+
+.sideImg p {
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+}
+
+.sideSvg {
+  width: 25px;
+}
+
 /* Mobile Header */
 @media (max-width: 767px) {
   #navList {
@@ -419,135 +548,6 @@ body {
   }
 }
 
-/* mobile list*/
-#mobileMenu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: white;
-  width: 100vw;
-  height: 100vh;
-  padding: 20px;
-  z-index: 1000;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  overflow-y: auto;
-  display: none;
-  box-sizing: border-box;
-}
-
-#mobileMenu.show {
-  display: block;
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-.internalClose {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 10px;
-}
-
-.internalClose svg {
-  cursor: pointer;
-}
-
-.mobileSearchBar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 30px;
-  padding: 0 10px;
-}
-
-.mobileSearchBar input {
-  flex: 1;
-  outline: none;
-  height: 45px;
-  border-radius: 30px;
-  border: 1px solid #ccc;
-  padding: 0 15px;
-  font-size: 16px;
-}
-
-#searchLogo {
-  background-color: #be2631;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#searchLogo img {
-  width: 21px;
-  height: 21px;
-}
-
-#searchLogo:hover {
-  background-color: #a9212a;
-  cursor: pointer;
-}
-
-#mobileMenu ul {
-  list-style: none;
-  padding: 0;
-}
-
-#mobileMenu li {
-  text-align: center;
-  margin: 30px 0;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-#mobileMenu li a {
-  text-decoration: none;
-  color: black;
-}
-#mobileMenu li a:hover {
-  color: #be2631;
-  transition: color 0.3s ease;
-}
-
-#mobileMenu li:hover {
-  color: #be2631;
-}
-
-.sideImg {
-  width: 150px;
-  border: 1px solid #4da05b;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  margin: 30px auto;
-  justify-content: center;
-  gap: 10px;
-}
-
-.sideImg:hover {
-  cursor: pointer;
-}
-
-.mobileUl {
-  margin-top: 100px;
-}
-
-.sideImg p {
-  font-weight: 600;
-  font-size: 15px;
-  text-align: center;
-  margin: 0;
-}
-
-.sideSvg {
-  width: 25px;
-}
-
 @media (min-width: 1025px) {
   .mobileSideBar,
   #mobileMenu {
@@ -555,6 +555,9 @@ body {
   }
 }
 
+.internalClose svg {
+  margin-bottom: 30px;
+}
 body.no-scroll {
   overflow: hidden;
   height: 100vh;

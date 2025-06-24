@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,15 +26,10 @@
       <nav>
         <div class="navContainer">
           <div class="header-wrapper">
-            <div id="leftBtn">
-              <p>استعلام</p>
-              <img src="./images/inquiry.svg" alt="svg" id="navSvg" />
-            </div>
+            <!-- Right Logo -->
+            <a href="/"><img src="./images/logo.svg" alt="logo" id="logo" /></a>
             <!-- Navbar List -->
             <div id="navList">
-              <div id="searchLogo">
-                <img src="./images/searchIcon.svg" alt="search svg" />
-              </div>
               <ul>
                 <li>اتصل بنا</li>
                 <li>العضوية</li>
@@ -43,14 +38,21 @@
                 <li>الخدمات</li>
                 <li>عن الجمعية</li>
               </ul>
+              <div id="searchLogo">
+                <img src="./images/searchIcon.svg" alt="search svg" />
+              </div>
             </div>
-            <!-- Right Logo -->
-            <a href="/"><img src="./images/logo.svg" alt="logo" id="logo" /></a>
+            <!-- left Button -->
+            <div id="leftBtn">
+              <img src="./images/inquiry.svg" alt="svg" id="navSvg" />
+              <p>استعلام</p>
+            </div>
           </div>
         </div>
 
         <!-- Mobile Navbar -->
         <div class="mobileSideBar">
+          <a href="/"><img src="./images/logo.svg" alt="logo" id="logo" /></a>
           <div class="openClose" id="toggleMenu">
             <!-- Burger Icon -->
             <svg
@@ -64,7 +66,6 @@
               <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
             </svg>
           </div>
-          <a href="/"><img src="./images/logo.svg" alt="logo" id="logo" /></a>
         </div>
 
         <!-- Mobile Menu -->
@@ -85,10 +86,10 @@
 
           <!-- search -->
           <div class="mobileSearchBar">
+            <input type="text" placeholder="ابحث هنا..." />
             <div id="searchLogo">
               <img src="./images/searchIcon.svg" alt="search" />
             </div>
-            <input type="text" placeholder="ابحث هنا..." />
           </div>
 
           <!-- list -->
@@ -196,15 +197,6 @@
         </div>
         <div id="carCard">
           <div id="carContent">
-            <div id="carSlider">
-              <div style="background-color: #000000"></div>
-              <div style="background-color: #28282859"></div>
-              <div style="background-color: #28282859"></div>
-            </div>
-            <div id="image-wrapper">
-              <div id="car-background"></div>
-              <img src="./images/car.png" alt="car" />
-            </div>
             <div id="carText">
               <div>
                 <h1>شركة بال سيرفس لصيانة ودهان المركبات</h1>
@@ -216,6 +208,16 @@
                 <p>طوّل عمر سيارتك مع خدمات بال سيرفيس وقسط السعر على 12 شهر</p>
                 <p>خدمات بال سيرفيس وقسط السعر على 12 شهر</p>
               </div>
+            </div>
+            <div id="image-wrapper">
+              <div id="car-background"></div>
+              <img src="./images/car.png" alt="car" />
+            </div>
+
+            <div id="carSlider">
+              <div style="background-color: #000000"></div>
+              <div style="background-color: #28282859"></div>
+              <div style="background-color: #28282859"></div>
             </div>
           </div>
         </div>

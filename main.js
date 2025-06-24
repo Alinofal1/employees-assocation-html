@@ -23,6 +23,13 @@ document.querySelectorAll("#mobileMenu li a").forEach((link) => {
     document.body.classList.remove("no-scroll");
   });
 });
+// remove no-scroll if screen becomes large
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1024 && mobileMenu.classList.contains("show")) {
+    mobileMenu.classList.remove("show");
+    document.body.classList.remove("no-scroll");
+  }
+});
 
 // Hero Section
 const slideImages = [
@@ -111,11 +118,11 @@ servicesData.forEach((item) => {
   card.className = "cardContent";
 
   card.innerHTML = `
-    <img src="${item.img}" alt="${item.title}" />
-    <div id="cardText">
-      <h1>${item.title}</h1>
-      <p>${item.desc}</p>
-    </div>
+  <img src="${item.img}" alt="${item.title}" />
+  <div id="cardText">
+  <h1>${item.title}</h1>
+  <p>${item.desc}</p>
+  </div>
   `;
 
   servicesCards.appendChild(card);

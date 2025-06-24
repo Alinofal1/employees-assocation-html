@@ -10,7 +10,6 @@
   width: 659px;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
   border: 1px solid #1111111a;
   border-radius: 30px;
 }
@@ -18,7 +17,7 @@
 .cardContent img {
   width: 132px;
   height: 132px;
-  margin: 37px 43px 37px;
+  margin: 37px auto;
 }
 
 #cardText {
@@ -90,7 +89,7 @@
     width: 350px;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
     border: 1px solid #1111111a;
     border-radius: 30px;
   }
