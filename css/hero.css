@@ -227,6 +227,9 @@
     font-weight: 700;
     font-size: 30px;
   }
+  .heroContent h1::after {
+    display: none;
+  }
   .heroContent p {
     width: 100%;
     max-width: 90vw;
