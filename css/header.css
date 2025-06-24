@@ -293,10 +293,10 @@ body {
     border: 1px solid #4da05b;
     border-radius: 30px;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     margin: auto;
     justify-content: center;
-    gap: 20px;
   }
   .sideImg:hover {
     cursor: pointer;
