@@ -306,13 +306,21 @@ body.no-scroll {
     gap: 20px;
     justify-content: center;
   }
-
   .sideImg {
     flex-direction: row-reverse;
     height: 40px;
-    line-height: 40px;
-    margin: auto;
     align-items: center;
+  }
+
+  .sideImg p {
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 4px;
+  }
+  .sideImg img {
+    width: 30px;
+    margin: 8px 0;
   }
 
   #logo {
