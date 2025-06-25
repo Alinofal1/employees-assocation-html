@@ -102,9 +102,9 @@ body {
   #footerList {
     flex-wrap: wrap;
     display: flex;
-    gap: 17px;
-    margin-bottom: 17px;
-    margin-top: 25px;
+    gap: 10px;
+    margin-bottom: 25px;
+    margin-top: 7px;
   }
 
   #footerList li {

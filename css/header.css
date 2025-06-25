@@ -13,6 +13,9 @@ nav {
   align-items: center;
 }
 
+.searchInput {
+  font-family: "Tajawal", sans-serif;
+}
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -141,8 +144,9 @@ body {
   margin-bottom: 10px;
 }
 
-.internalClose svg {
+.internalClose img {
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 .mobileSearchBar {
@@ -198,6 +202,7 @@ body {
   margin: 30px auto;
   justify-content: center;
   gap: 10px;
+  line-height: 100%;
 }
 
 .sideImg:hover {
@@ -217,10 +222,6 @@ body {
 
 .sideSvg {
   width: 25px;
-}
-
-.internalClose svg {
-  margin-bottom: 30px;
 }
 
 body.no-scroll {
@@ -283,11 +284,17 @@ body.no-scroll {
   .navContainer {
     display: none;
   }
+  nav {
+    height: 80px;
+  }
   .mobileSideBar {
     display: flex;
     align-items: center;
     gap: 180px;
     margin: 0 auto;
+  }
+  #searchLogo {
+    margin: auto;
   }
   .no-scroll {
     overflow: hidden;
@@ -326,8 +333,8 @@ body.no-scroll {
   }
 
   #logo {
-    max-width: 150px;
-    height: auto;
+    max-width: 85px;
+    height: 49px;
   }
 }
 
@@ -336,6 +343,9 @@ body.no-scroll {
   #navList {
     display: none;
   }
+  .nav {
+    height: 110px;
+  }
   .header-wrapper {
     margin: auto;
     gap: 170px;
@@ -343,6 +353,9 @@ body.no-scroll {
   .no-scroll {
     overflow: hidden;
     height: 100vh;
+  }
+  #searchLogo {
+    margin: auto;
   }
   .navContainer {
     display: none;
@@ -376,10 +389,6 @@ body.no-scroll {
     flex-direction: row-reverse;
     height: 40px;
     align-items: center;
-  }
-  #logo {
-    width: 140px;
-    height: 140px;
   }
 }
 
@@ -456,10 +465,6 @@ body.no-scroll {
     color: #be2631;
     transition-duration: 300ms;
     cursor: pointer;
-  }
-  #logo {
-    width: 130px;
-    height: 61px;
   }
 }
 
