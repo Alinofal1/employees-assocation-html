@@ -214,11 +214,12 @@ body {
   width: 56px;
   font-weight: 500;
   font-size: 15px;
+  margin: auto;
 }
 
 .sideImg img {
   width: 40px;
-  margin: 8px auto;
+  margin: 8px 0;
 }
 
 .mobileUl {
