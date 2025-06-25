@@ -306,26 +306,7 @@ body.no-scroll {
     gap: 20px;
     justify-content: center;
   }
-  #leftBtn {
-    width: 130px;
-    border: 1px solid #4da05b;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    flex-shrink: 0;
-  }
-  #leftBtn p {
-    font-weight: 700;
-    font-size: 15px;
-    text-align: center;
-    margin-left: 4px;
-  }
-  #leftBtn img {
-    width: 50px;
-    margin: 8px 0;
-  }
+
   .sideImg {
     flex-direction: row-reverse;
     height: 40px;
