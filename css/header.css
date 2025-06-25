@@ -218,7 +218,7 @@ body {
 
 .sideImg img {
   width: 40px;
-  margin: 8px 0;
+  margin: 8px auto;
 }
 
 .mobileUl {
