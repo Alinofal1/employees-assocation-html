@@ -68,10 +68,8 @@ nav {
 }
 
 #searchLogo img {
-  width: 21.49px;
-  height: 21.08px;
-  top: 12.5px;
-  left: 13.5px;
+  width: 21px;
+  height: 21px;
 }
 
 #navList ul {
@@ -102,7 +100,7 @@ nav {
 body {
   overflow-x: hidden;
 }
-/* Responsive */
+
 .mobileSideBar {
   display: none;
 }
@@ -111,7 +109,7 @@ body {
   cursor: pointer;
 }
 
-/* mobile list*/
+/* Mobile Menu */
 #mobileMenu {
   position: fixed;
   top: 0;
@@ -165,26 +163,6 @@ body {
   font-size: 16px;
 }
 
-#searchLogo {
-  background-color: #be2631;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#searchLogo img {
-  width: 21px;
-  height: 21px;
-}
-
-#searchLogo:hover {
-  background-color: #a9212a;
-  cursor: pointer;
-}
-
 #mobileMenu ul {
   list-style: none;
   padding: 0;
@@ -201,6 +179,7 @@ body {
   text-decoration: none;
   color: black;
 }
+
 #mobileMenu li a:hover {
   color: #be2631;
   transition: color 0.3s ease;
@@ -240,6 +219,62 @@ body {
   width: 25px;
 }
 
+.internalClose svg {
+  margin-bottom: 30px;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Desktop Search */
+#desktopSearchWrapper {
+  position: fixed;
+  top: 138px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 138px);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 999;
+  display: none;
+  transition: opacity 0.4s ease;
+}
+
+#desktopSearchWrapper.show-search {
+  display: block;
+  opacity: 1;
+}
+
+#desktopSearchWrapper.hidden {
+  opacity: 0;
+  display: none;
+}
+
+.searchBarContainer {
+  margin: 50px auto;
+  max-width: 600px;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.searchBarContainer input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.closeSearch {
+  cursor: pointer;
+}
+
 /* Mobile Header */
 @media (max-width: 767px) {
   #navList {
@@ -258,68 +293,12 @@ body {
     overflow: hidden;
     height: 100vh;
   }
-
-  .mobileList {
-    position: fixed;
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffffff;
-    left: 0;
-    top: 0;
-    margin: auto;
-    padding: 20px;
-  }
-  .side {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .mobileList li {
-    margin: 40px auto;
-    text-align: center;
-  }
-  .mobileList li:hover {
-    color: #be2631;
-    transition-duration: 300ms;
-  }
-
-  .mobileList li {
-    display: block;
-  }
-  .sideImg {
-    width: 150px;
-    border: 1px solid #4da05b;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: auto;
-    justify-content: center;
-  }
-  .sideImg:hover {
-    cursor: pointer;
-  }
-  .sideImg p {
-    width: 46px;
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .sideSvg {
-    width: 25px;
-    margin: 8px 0;
-  }
-
   .header-wrapper {
     width: 100%;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
   }
-
   #leftBtn {
     width: 130px;
     border: 1px solid #4da05b;
@@ -355,78 +334,19 @@ body {
     margin: auto;
     gap: 170px;
   }
-  /* tablet list */
   .no-scroll {
     overflow: hidden;
     height: 100vh;
   }
-
-  .side {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .mobileList {
-    position: fixed;
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffffff;
-    left: 0;
-    top: 0;
-    margin: auto;
-    padding: 20px;
-  }
-
-  .mobileList li {
-    margin: 40px auto;
-    text-align: center;
-    font-size: 17px;
-  }
-  .mobileList li:hover {
-    color: #be2631;
-    transition-duration: 300ms;
-  }
-
-  .mobileList li {
-    display: block;
-  }
-  .sideImg {
-    width: 150px;
-    border: 1px solid #4da05b;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    justify-content: center;
-    gap: 20px;
-  }
-  .sideImg:hover {
-    cursor: pointer;
-  }
-  .sideImg p {
-    width: 46px;
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .sideSvg {
-    width: 25px;
-    margin: 8px 0;
-  }
   .navContainer {
     display: none;
   }
-
   .mobileSideBar {
     display: flex;
     align-items: center;
     gap: 600px;
     margin: 0 auto;
   }
-
   #leftBtn {
     width: 170px;
     border: 1px solid #4da05b;
@@ -436,14 +356,12 @@ body {
     justify-content: center;
     gap: 4px;
   }
-
   #leftBtn p {
     font-weight: 700;
     font-size: 20px;
     text-align: center;
     margin-left: 4px;
   }
-
   #leftBtn img {
     width: 50px;
     margin: 8px 0;
@@ -462,7 +380,6 @@ body {
     display: flex;
     justify-items: center;
   }
-
   .navContainer {
     max-width: 1050px;
     width: 100%;
@@ -470,13 +387,11 @@ body {
     display: flex;
     align-items: center;
   }
-
   .header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
   #leftBtn {
     width: 156px;
     border: 1px solid #4da05b;
@@ -486,25 +401,21 @@ body {
     justify-content: center;
     gap: 4px;
   }
-
   #leftBtn p {
     width: 56px;
     font-weight: 600;
     font-size: 15px;
     text-align: center;
   }
-
   #leftBtn img {
     width: 35px;
     margin: 8px 0;
   }
-
   #navList {
     display: flex;
     align-items: center;
     margin: 0 86.5px;
   }
-
   #searchLogo {
     background-color: #be2631;
     border-radius: 41px;
@@ -515,33 +426,26 @@ body {
     justify-content: center;
     margin-right: 30px;
   }
-
   #searchLogo img {
     width: 15px;
     height: 15px;
-    top: 8.5px;
-    left: 8.5px;
   }
-
   #navList ul {
     width: 552px;
     display: flex;
     gap: 30px;
   }
-
   #navList ul li {
     padding: 3.5px 0;
     font-weight: 600;
     font-size: 15px;
     margin: auto;
   }
-
   #navList ul li:hover {
     color: #be2631;
     transition-duration: 300ms;
     cursor: pointer;
   }
-
   #logo {
     width: 130px;
     height: 61px;
@@ -553,12 +457,4 @@ body {
   #mobileMenu {
     display: none !important;
   }
-}
-
-.internalClose svg {
-  margin-bottom: 30px;
-}
-body.no-scroll {
-  overflow: hidden;
-  height: 100vh;
 }

@@ -31,12 +31,53 @@ window.addEventListener("resize", () => {
   }
 });
 
+// input search
+const searchLogo = document.querySelector("#navList #searchLogo");
+const searchWrapper = document.getElementById("desktopSearchWrapper");
+const closeSearchBtn = document.getElementById("closeSearchBtn");
+
+searchLogo?.addEventListener("click", () => {
+  searchWrapper.classList.remove("hidden");
+  searchWrapper.classList.add("show-search");
+  document.body.classList.add("no-scroll");
+});
+
+closeSearchBtn?.addEventListener("click", () => {
+  searchWrapper.classList.remove("show-search");
+  searchWrapper.classList.add("hidden");
+  document.body.classList.remove("no-scroll");
+});
+
 // Hero Section
-const slideImages = [
-  "./images/sliderImage2.png",
-  "./images/cardsImg.png",
-  "./images/heroImg.jpg",
-  "./images/sliderImage.png",
+const slidesData = [
+  {
+    image: "./images/sliderImage2.png",
+    title: "معاً نحو استقرار مالي للموظفين الحكوميين",
+    description:
+      "تمويل لشراء احتياجاتك من شركائنا (تأمين المركبات، أجهزة كهربائية وإلكترونية، أثاث منزلي، صيانة ودهان سيارات، خدمات طبية للأسنان، محروقات…) وتقسيط يصل حتى 12 شهراً",
+    buttonText: "معرفة المزيد",
+  },
+  {
+    image: "./images/cardsImg.png",
+    title: "معاً نحو استقرار مالي للموظفين الحكوميين",
+    description:
+      "تمويل لشراء احتياجاتك من شركائنا (تأمين المركبات، أجهزة كهربائية وإلكترونية، أثاث منزلي، صيانة ودهان سيارات، خدمات طبية للأسنان، محروقات…) وتقسيط يصل حتى 12 شهراً",
+    buttonText: "معرفة المزيد",
+  },
+  {
+    image: "./images/heroImg.jpg",
+    title: "معاً نحو استقرار مالي للموظفين الحكوميين",
+    description:
+      "تمويل لشراء احتياجاتك من شركائنا (تأمين المركبات، أجهزة كهربائية وإلكترونية، أثاث منزلي، صيانة ودهان سيارات، خدمات طبية للأسنان، محروقات…) وتقسيط يصل حتى 12 شهراً",
+    buttonText: "معرفة المزيد",
+  },
+  {
+    image: "./images/sliderImage.png",
+    title: "معاً نحو استقرار مالي للموظفين الحكوميين",
+    description:
+      "تمويل لشراء احتياجاتك من شركائنا (تأمين المركبات، أجهزة كهربائية وإلكترونية، أثاث منزلي، صيانة ودهان سيارات، خدمات طبية للأسنان، محروقات…) وتقسيط يصل حتى 12 شهراً",
+    buttonText: "معرفة المزيد",
+  },
 ];
 
 let currentIndex = 0;
@@ -47,9 +88,16 @@ const downBtn = document.querySelector(".down");
 
 function changeSlide(index) {
   currentIndex = index;
+
   imgSlider.innerHTML = `
-    <img src="${slideImages[index]}" class="heroImg slideImage fade-in" />
+    <img src="${slidesData[index].image}" class="heroImg slideImage fade-in" />
   `;
+
+  document.getElementById("slideTitle").textContent = slidesData[index].title;
+  document.getElementById("slideDescription").textContent =
+    slidesData[index].description;
+  document.getElementById("slideButton").textContent =
+    slidesData[index].buttonText;
 
   sliderImages.forEach((img, i) => {
     img.style.border = i === index ? "7px solid #b7312b" : "none";
@@ -61,14 +109,13 @@ changeSlide(currentIndex);
 
 // Next slide
 function nextSlide() {
-  const nextIndex = (currentIndex + 1) % slideImages.length;
+  const nextIndex = (currentIndex + 1) % slidesData.length;
   changeSlide(nextIndex);
 }
 
 // Previous slide
 function prevSlide() {
-  const prevIndex =
-    (currentIndex - 1 + slideImages.length) % slideImages.length;
+  const prevIndex = (currentIndex - 1 + slidesData.length) % slidesData.length;
   changeSlide(prevIndex);
 }
 
