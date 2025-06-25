@@ -202,18 +202,24 @@ body {
   align-items: center;
   justify-content: center;
   margin: 30px auto;
-  gap: 10px;
+  gap: 4px;
   line-height: 100%;
 }
 
-.sideImg p {
-  padding: 10px 0;
-}
-.sideImg img {
-  height: 20px;
-}
 .sideImg:hover {
   cursor: pointer;
+}
+
+.sideImg p {
+  width: 56px;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+}
+
+.sideImg img {
+  width: 40px;
+  margin: 8px 0;
 }
 
 .mobileUl {
