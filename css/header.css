@@ -321,6 +321,7 @@ body.no-scroll {
   }
   .sideImg {
     flex-direction: row-reverse;
+    height: 40px;
   }
 
   #logo {
@@ -372,6 +373,7 @@ body.no-scroll {
   }
   .sideImg {
     flex-direction: row-reverse;
+    height: 40px;
   }
   #logo {
     width: 140px;
