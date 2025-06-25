@@ -195,6 +195,7 @@ body {
 
 .sideImg {
   width: 150px;
+  height: 40px;
   border: 1px solid #4da05b;
   border-radius: 30px;
   display: flex;
