@@ -198,11 +198,16 @@ body {
   border: 1px solid #4da05b;
   border-radius: 30px;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  margin: 30px auto;
   justify-content: center;
+  margin: 30px auto;
   gap: 10px;
   line-height: 100%;
+}
+
+.sideImg p {
+  padding: 8px 0;
 }
 
 .sideImg:hover {
@@ -306,23 +311,6 @@ body.no-scroll {
     gap: 20px;
     justify-content: center;
   }
-  .sideImg {
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .sideImg p {
-    font-weight: 700;
-    font-size: 15px;
-    text-align: center;
-    margin-left: 4px;
-  }
-  .sideImg img {
-    width: 30px;
-    margin: 12px 0;
-  }
-
   #logo {
     max-width: 100px;
     height: 55px;
