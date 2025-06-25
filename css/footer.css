@@ -123,6 +123,10 @@ body {
   #footerBottom p {
     text-align: center;
   }
+
+  #newsCards {
+    margin-bottom: 44px;
+  }
 }
 
 /* Tablet */
@@ -143,6 +147,9 @@ body {
 
   #footerBottom p {
     text-align: center;
+  }
+  #newsCards {
+    margin-bottom: 44px;
   }
 }
 
