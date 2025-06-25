@@ -203,7 +203,7 @@ body {
   justify-content: center;
   margin: 30px auto;
   gap: 4px;
-  line-height: 100%;
+  line-height: 1;
 }
 
 .sideImg:hover {
@@ -215,11 +215,14 @@ body {
   font-size: 15px;
   text-align: center;
   margin: 0;
+  line-height: 1;
 }
 
 .sideImg img {
   width: 40px;
-  margin: 8px 0;
+  height: 40px;
+  margin: 0;
+  object-fit: contain;
 }
 
 .mobileUl {
@@ -364,11 +367,6 @@ body.no-scroll {
   #leftBtn img {
     width: 50px;
     margin: 8px 0;
-  }
-  .sideImg {
-    flex-direction: row-reverse;
-    height: 40px;
-    align-items: center;
   }
 }
 
