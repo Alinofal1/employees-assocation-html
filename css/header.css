@@ -211,10 +211,10 @@ body {
 }
 
 .sideImg p {
-  width: 56px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
-  margin: auto;
+  text-align: center;
+  margin: 0;
 }
 
 .sideImg img {
@@ -224,13 +224,6 @@ body {
 
 .mobileUl {
   margin-top: 100px;
-}
-
-.sideImg p {
-  font-weight: 600;
-  font-size: 15px;
-  text-align: center;
-  margin: 0;
 }
 
 .sideSvg {
