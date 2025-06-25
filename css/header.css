@@ -319,6 +319,10 @@ body.no-scroll {
     width: 50px;
     margin: 8px 0;
   }
+  .sideImg {
+    flex-direction: row-reverse;
+  }
+
   #logo {
     max-width: 150px;
     height: auto;
@@ -365,6 +369,9 @@ body.no-scroll {
   #leftBtn img {
     width: 50px;
     margin: 8px 0;
+  }
+  .sideImg {
+    flex-direction: row-reverse;
   }
   #logo {
     width: 140px;
