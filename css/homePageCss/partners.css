@@ -7,13 +7,13 @@
   box-sizing: border-box;
 }
 
-.ServicesHead h1 span {
+.ServicesHead h2 span {
   color: #4da05b;
 }
 
 /* Mobile View */
 @media (max-width: 767px) {
-  .ServicesHead h1 {
+  .ServicesHead h2 {
     font-weight: 700;
     font-size: 25px;
   }

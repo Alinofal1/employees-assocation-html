@@ -1,8 +1,9 @@
-@import url("./css/header.css");
-@import url("./css/hero.css");
-@import url("./css/services.css");
-@import url("./css/servicesCards.css");
-@import url("./css/partners.css");
-@import url("./css/carCard.css");
-@import url("./css/newsCard.css");
-@import url("./css/footer.css");
+/* Home Page Styles */
+@import url("./css/homePageCss/header.css");
+@import url("./css/homePageCss/hero.css");
+@import url("./css/homePageCss/services.css");
+@import url("./css/homePageCss/servicesCards.css");
+@import url("./css/homePageCss/partners.css");
+@import url("./css/homePageCss/carCard.css");
+@import url("./css/homePageCss/newsCard.css");
+@import url("./css/homePageCss/footer.css");

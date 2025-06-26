@@ -30,13 +30,13 @@
   z-index: 2;
 }
 
-.heroContent h1 {
+#slideTitle {
   position: relative;
   display: inline-block;
   text-align: right;
 }
 
-.heroContent h1::after {
+#slideTitle::after {
   content: "";
   position: absolute;
   right: 0px;
@@ -46,7 +46,7 @@
   background-color: #ffffff;
 }
 
-.hero h1 {
+#slideTitle {
   width: 726px;
   font-weight: 700;
   font-size: 35px;
@@ -164,15 +164,15 @@
     z-index: 1;
   }
 
-  .heroContent h1::after {
+  #slideTitle::after {
     display: none;
   }
 
-  .heroContent h1 {
+  #slideTitle {
     text-align: center;
   }
 
-  .hero h1 {
+  #slideTitle {
     margin: auto;
     width: 335px;
     font-weight: 700;
@@ -231,17 +231,17 @@
     z-index: 1;
   }
 
-  .heroContent h1 {
+  #slideTitle {
     text-align: center;
   }
 
-  .hero h1 {
+  #slideTitle {
     margin: auto;
     width: 535px;
     font-weight: 700;
     font-size: 30px;
   }
-  .heroContent h1::after {
+  #slideTitle::after {
     display: none;
   }
   .heroContent p {

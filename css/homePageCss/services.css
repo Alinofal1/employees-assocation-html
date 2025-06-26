@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.ServicesHead h1 {
+.ServicesHead h2 {
   font-weight: 700;
   font-size: 35px;
 }
@@ -24,13 +24,13 @@
   margin-top: 15px;
 }
 
-.services h1 span {
+.services h2 span {
   color: #4da05b;
 }
 
 /* Mobile View */
 @media (max-width: 767px) {
-  .ServicesHead h1 {
+  .ServicesHead h2 {
     font-weight: 700;
     font-size: 25px;
   }

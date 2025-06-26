@@ -9,21 +9,21 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
+      href="/assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
+      href="/assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
+      href="/assets/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,7 +47,11 @@
         <div class="navContainer">
           <div class="header-wrapper">
             <!-- Right Logo -->
-            <a href="/"><img src="./images/logo.png" alt="logo" id="logo" /></a>
+            <a href="/">
+              <h1>
+                <img src="./assets/images/logo.png" alt="logo" id="logo" />
+              </h1>
+            </a>
             <!-- Navbar List -->
             <div id="navList">
               <ul>
@@ -59,12 +63,12 @@
                 <li>عن الجمعية</li>
               </ul>
               <div id="searchLogo">
-                <img src="./images/searchIcon.svg" alt="search svg" />
+                <img src="./assets/images/searchIcon.svg" alt="search svg" />
               </div>
             </div>
             <!-- left Button -->
             <div id="leftBtn">
-              <img src="./images/inquiry.svg" alt="svg" id="navSvg" />
+              <img src="./assets/images/inquiry.svg" alt="svg" id="navSvg" />
               <p>استعلام</p>
             </div>
           </div>
@@ -72,7 +76,9 @@
 
         <!-- Mobile Navbar -->
         <div class="mobileSideBar">
-          <a href="/"><img src="./images/logo.png" alt="logo" id="logo" /></a>
+          <a href="/"
+            ><img src="./assets/images/logo.png" alt="logo" id="logo"
+          /></a>
           <div class="openClose" id="toggleMenu">
             <!-- Burger Icon -->
             <svg
@@ -92,7 +98,7 @@
         <div id="mobileMenu">
           <div id="internalCloseIcon" class="internalClose">
             <img
-              src="./images/close-svgrepo-com.svg"
+              src="./assets/images/close-svgrepo-com.svg"
               alt="close"
               width="22"
               height="22"
@@ -103,7 +109,7 @@
           <div class="mobileSearchBar">
             <input type="text" placeholder="ابحث هنا..." class="searchInput" />
             <div id="searchLogo">
-              <img src="./images/searchIcon.svg" alt="search" />
+              <img src="./assets/images/searchIcon.svg" alt="search" />
             </div>
           </div>
 
@@ -118,7 +124,7 @@
           <!-- leftBtn -->
           <div class="sideImg">
             <p>استعلام</p>
-            <img src="./images/inquiry.svg" alt="svg" class="sideSvg" />
+            <img src="./assets/images/inquiry.svg" alt="svg" class="sideSvg" />
           </div>
         </div>
       </nav>
@@ -129,7 +135,7 @@
           <input type="text" placeholder="ابحث هنا..." class="searchInput" />
           <div class="closeSearch" id="closeSearchBtn">
             <img
-              src="./images/close-svgrepo-com.svg"
+              src="./assets/images/close-svgrepo-com.svg"
               alt="close"
               width="22"
               height="22"
@@ -143,7 +149,7 @@
         <div class="heroImg" style="position: relative; overflow: hidden">
           <!-- Hero Background-->
           <div class="imgSlider">
-            <img src="./images/heroImg.jpg" class="heroImg slideImage" />
+            <img src="./assets/images/heroImg.jpg" class="heroImg slideImage" />
           </div>
 
           <!-- overlay  -->
@@ -151,7 +157,7 @@
 
           <!-- Hero content -->
           <div class="heroContent">
-            <h1 id="slideTitle">معاً نحو استقرار مالي للموظفين الحكوميين</h1>
+            <h2 id="slideTitle">معاً نحو استقرار مالي للموظفين الحكوميين</h2>
             <p id="slideDescription">
               تمويل لشراء احتياجاتك من شركائنا (تأمين المركبات، أجهزة كهربائية
               وإلكترونية، أثاث منزلي، صيانة ودهان سيارات، خدمات طبية للأسنان،
@@ -181,10 +187,10 @@
 
             <!-- Thumbnails -->
             <div id="sliderImages">
-              <img src="./images/sliderImage2.png" alt="img" />
-              <img src="./images/cardsImg.png" alt="img" />
-              <img src="./images/heroImg.jpg" alt="img" />
-              <img src="./images/sliderImage.png" alt="img" />
+              <img src="./assets/images/sliderImage2.png" alt="img" />
+              <img src="./assets/images/cardsImg.png" alt="img" />
+              <img src="./assets/images/heroImg.jpg" alt="img" />
+              <img src="./assets/images/sliderImage.png" alt="img" />
             </div>
 
             <!-- down click -->
@@ -209,7 +215,7 @@
       <!-- Services -->
       <section class="services">
         <div class="ServicesHead">
-          <h1>خدمات <span>الجمعية</span></h1>
+          <h2>خدمات <span>الجمعية</span></h2>
           <p>
             نوفر لكم ثلاثة خيارات تمويلية شاملة–نقدية وعينية وصندوق إقراض
             الطالب–بحيث تلبي جميع احتياجاتكم بسهولة ويسر
@@ -221,18 +227,19 @@
       <!-- Partners -->
       <section id="partners">
         <div class="ServicesHead">
-          <h1>شراكات <span>الجمعية</span></h1>
+          <h2>شراكات <span>الجمعية</span></h2>
           <p>
             نوفر خلال فترات محددة من العام، تطلق جمعيتنا حملات تمويلية مصممة
             خصيصاً لتلبية احتياجاتكم بأفضل الشروط وأقل التكاليف. تتيح لكم هذه
             الحملات
           </p>
         </div>
+        <!-- Car Card -->
         <div id="carCard">
           <div id="carContent">
             <div id="carText">
               <div>
-                <h1>شركة بال سيرفس لصيانة ودهان المركبات</h1>
+                <h2 class="carH2">شركة بال سيرفس لصيانة ودهان المركبات</h2>
                 <p id="pal-service">
                   لخدمة المقدمة: عمل صيانة للسيارة ومدة التقسيط 12 شهر
                 </p>
@@ -244,7 +251,7 @@
             </div>
             <div id="image-wrapper">
               <div id="car-background"></div>
-              <img src="./images/car.png" alt="car" />
+              <img src="./assets/images/car.png" alt="car" />
             </div>
 
             <div id="carSlider">
@@ -258,7 +265,7 @@
       <!-- News -->
       <section id="news">
         <div class="ServicesHead">
-          <h1>أخبار <span>الجمعية</span></h1>
+          <h2>أخبار <span>الجمعية</span></h2>
           <p>
             نوفر لكم ثلاثة خيارات تمويلية شاملة–نقدية وعينية وصندوق إقراض
             الطالب–بحيث تلبي جميع احتياجاتكم بسهولة ويسر
@@ -284,10 +291,10 @@
         <div id="footerBottom">
           <p>© 2025 جمعية الموظفين الحكوميين</p>
           <div id="socialMedia">
-            <img src="./images/facebook.svg" alt="icon" />
-            <img src="./images/instagram.svg" alt="icon" />
-            <img src="./images/twitter.svg" alt="icon" />
-            <img src="./images/tiktok.svg" alt="icon" />
+            <img src="./assets/images/facebook.svg" alt="icon" />
+            <img src="./assets/images/instagram.svg" alt="icon" />
+            <img src="./assets/images/twitter.svg" alt="icon" />
+            <img src="./assets/images/tiktok.svg" alt="icon" />
           </div>
           <p>سياسة الخصوصية | الشروط والاحكام</p>
         </div>
