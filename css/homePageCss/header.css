@@ -346,7 +346,7 @@ body.no-scroll {
   .mobileSideBar {
     display: flex;
     align-items: center;
-    gap: 600px;
+    gap: 580px;
     margin: 0 auto;
   }
   #leftBtn {

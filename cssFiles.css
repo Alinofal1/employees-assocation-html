@@ -7,3 +7,6 @@
 @import url("./css/homePageCss/carCard.css");
 @import url("./css/homePageCss/newsCard.css");
 @import url("./css/homePageCss/footer.css");
+
+/* who we are page styles */
+@import url("./css/whoWeAreCss/greenHeader.css");
