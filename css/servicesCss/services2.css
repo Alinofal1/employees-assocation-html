@@ -1,4 +1,20 @@
-#ServicesCards {
+#ServicesSection {
+  width: 100%;
+  max-width: 1350px;
+  margin: auto;
+  margin-top: 76px;
+  margin-bottom: 142px;
+}
+
+#servicesContent h2 {
+  margin-bottom: 11px;
+}
+
+#servicesContent p {
+  margin-bottom: 40px;
+}
+
+#ServicesCards2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,45 +22,72 @@
   margin-top: 30px;
 }
 
-.cardContent {
+#ServicesCards2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.cardContent2 {
   width: 659px;
   display: flex;
   align-items: center;
   border: 1px solid #1111111a;
   border-radius: 30px;
+  box-shadow: 0px 0px 15px 0px #00000005;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cardContent img {
+.cardContent2:hover {
+  transform: translateY(-6px) scale(1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cardContent2 img {
   width: 132px;
   height: 132px;
   margin: 37px auto;
 }
 
-#cardText {
+#cardText2 {
   width: 373px;
   text-align: right;
 }
 
-#cardText h2 {
+#cardText2 h2 {
   font-weight: 700;
   font-size: 20px;
+  line-height: 156%;
 }
 
-#cardText p {
-  font-weight: 300;
+#cardText2 p {
+  font-weight: 700;
   font-size: 15px;
-  width: 370px;
-  line-height: 204%;
+  line-height: 178%;
+  color: #656565;
 }
 
 /* Mobile View */
 @media (max-width: 767px) {
-  #ServicesCards {
+  #servicesContent h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 11px;
+  }
+
+  #servicesContent p {
+    margin: auto 20px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #ServicesCards2 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .cardContent {
+  .cardContent2 {
     width: 90vw;
     display: flex;
     justify-items: center;
@@ -53,21 +96,21 @@
     border: 1px solid #1111111a;
     border-radius: 30px;
   }
-  .cardContent img {
+  .cardContent2 img {
     width: 112px;
     height: 100%;
   }
 
-  #cardText {
+  #cardText2 {
     width: 373px;
     text-align: center;
   }
-  #cardText h1 {
+  #cardText2 h2 {
     font-weight: 600;
     font-size: 18px;
     margin: 0 30px;
   }
-  #cardText p {
+  #cardText2 p {
     padding: 20px;
     text-align: center;
     font-weight: 300;
@@ -77,7 +120,21 @@
 
 /* Tablet screen */
 @media (min-width: 768px) and (max-width: 1024px) {
-  #ServicesCards {
+  #servicesContent h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 11px;
+  }
+
+  #servicesContent p {
+    margin: auto 20px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #ServicesCards2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +142,7 @@
     margin: 20px 20px;
   }
 
-  .cardContent {
+  .cardContent2 {
     width: 350px;
     display: flex;
     align-items: center;
@@ -94,19 +151,19 @@
     border-radius: 30px;
   }
 
-  .cardContent img {
+  .cardContent2 img {
     width: 80px;
     height: 80px;
     margin: 37px 20px;
     padding: 0;
   }
 
-  #cardText h1 {
+  #cardText2 h2 {
     font-weight: 600;
     font-size: 15px;
   }
 
-  #cardText p {
+  #cardText2 p {
     font-weight: 400;
     font-size: 10px;
     width: 220px;
@@ -117,7 +174,15 @@
 /* Small laptop screen */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  #ServicesCards {
+  #servicesContent h2 {
+    margin: auto 20px;
+  }
+
+  #servicesContent p {
+    margin: auto 20px;
+  }
+
+  #ServicesCards2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,21 +190,21 @@
     margin: 30px 20px;
   }
 
-  .cardContent {
+  .cardContent2 {
     width: 459px;
   }
 
-  .cardContent img {
+  .cardContent2 img {
     width: 125px;
     height: 125px;
     margin: 37px 25px 37px;
   }
 
-  #cardText {
+  #cardText2 {
     width: 330px;
   }
 
-  #cardText p {
+  #cardText2 p {
     width: 280px;
   }
 }

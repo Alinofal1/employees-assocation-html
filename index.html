@@ -40,109 +40,15 @@
     />
   </head>
 
-  <body class="antialiased">
+  <body>
     <div class="container">
-      <!-- Header -->
-      <nav>
-        <div class="navContainer">
-          <div class="header-wrapper">
-            <!-- Right Logo -->
-            <a href="/">
-              <h1>
-                <img src="./assets/images/logo.png" alt="logo" id="logo" />
-              </h1>
-            </a>
-            <!-- Navbar List -->
-            <div id="navList">
-              <ul>
-                <li>اتصل بنا</li>
-                <li>العضوية</li>
-                <li>ميديا</li>
-                <li>المكتبة الالكترونية</li>
-                <li>الخدمات</li>
-                <li>عن الجمعية</li>
-              </ul>
-              <div id="searchLogo">
-                <img src="./assets/images/searchIcon.svg" alt="search svg" />
-              </div>
-            </div>
-            <!-- left Button -->
-            <div id="leftBtn">
-              <img src="./assets/images/inquiry.svg" alt="svg" id="navSvg" />
-              <p>استعلام</p>
-            </div>
-          </div>
-        </div>
+      <!-- Header Placeholder -->
+      <div id="header-placeholder"></div>
+      <!-- Desktop Search Placeholder -->
+      <div id="desktop-search-placeholder"></div>
 
-        <!-- Mobile Navbar -->
-        <div class="mobileSideBar">
-          <a href="/"
-            ><img src="./assets/images/logo.png" alt="logo" id="logo"
-          /></a>
-          <div class="openClose" id="toggleMenu">
-            <!-- Burger Icon -->
-            <svg
-              id="burgerIcon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
-            </svg>
-          </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobileMenu">
-          <div id="internalCloseIcon" class="internalClose">
-            <img
-              src="./assets/images/close-svgrepo-com.svg"
-              alt="close"
-              width="22"
-              height="22"
-            />
-          </div>
-
-          <!-- search -->
-          <div class="mobileSearchBar">
-            <input type="text" placeholder="ابحث هنا..." class="searchInput" />
-            <div id="searchLogo">
-              <img src="./assets/images/searchIcon.svg" alt="search" />
-            </div>
-          </div>
-
-          <!-- list -->
-          <ul class="mobileUl">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#about">من نحن</a></li>
-            <li><a href="#services">الخدمات</a></li>
-            <li><a href="#contact">تواصل معنا</a></li>
-          </ul>
-
-          <!-- leftBtn -->
-          <div class="sideImg">
-            <p>استعلام</p>
-            <img src="./assets/images/inquiry.svg" alt="svg" class="sideSvg" />
-          </div>
-        </div>
-      </nav>
-      <!-- Desktop search -->
-      <div id="desktopSearchWrapper" class="hidden">
-        <div class="backdrop"></div>
-        <div class="searchBarContainer">
-          <input type="text" placeholder="ابحث هنا..." class="searchInput" />
-          <div class="closeSearch" id="closeSearchBtn">
-            <img
-              src="./assets/images/close-svgrepo-com.svg"
-              alt="close"
-              width="22"
-              height="22"
-            />
-          </div>
-        </div>
-      </div>
+      <!-- Green Header -->
+      <div id="greenHeaderContainer"></div>
 
       <!-- Hero section -->
       <section class="hero">
@@ -236,30 +142,10 @@
         </div>
         <!-- Car Card -->
         <div id="carCard">
-          <div id="carContent">
-            <div id="carText">
-              <div>
-                <h2 class="carH2">شركة بال سيرفس لصيانة ودهان المركبات</h2>
-                <p id="pal-service">
-                  لخدمة المقدمة: عمل صيانة للسيارة ومدة التقسيط 12 شهر
-                </p>
-              </div>
-              <div class="pal-service2">
-                <p>طوّل عمر سيارتك مع خدمات بال سيرفيس وقسط السعر على 12 شهر</p>
-                <p>خدمات بال سيرفيس وقسط السعر على 12 شهر</p>
-              </div>
-            </div>
-            <div id="image-wrapper">
-              <div id="car-background"></div>
-              <img src="./assets/images/car.png" alt="car" />
-            </div>
-
-            <div id="carSlider">
-              <div style="background-color: #000000"></div>
-              <div style="background-color: #28282859"></div>
-              <div style="background-color: #28282859"></div>
-            </div>
+          <div id="carWrapper">
+            <div id="carSliderContainer"></div>
           </div>
+          <div id="carSlider"></div>
         </div>
       </section>
       <!-- News -->
@@ -274,32 +160,13 @@
         <!-- News Cards -->
         <div id="newsCards"></div>
       </section>
+
       <!-- Footer -->
-      <footer>
-        <div id="listWrapper">
-          <ul id="footerList">
-            <li>التسليف العيني</li>
-            <li>النماذج الالكترونية</li>
-            <li>تقارير سنوية</li>
-            <li>تقارير مالية</li>
-            <li>التسليف النقدي</li>
-            <li>التسليف العيني</li>
-            <li>النماذج الالكترونية</li>
-            <li>مجلس الادارة</li>
-          </ul>
-        </div>
-        <div id="footerBottom">
-          <p>© 2025 جمعية الموظفين الحكوميين</p>
-          <div id="socialMedia">
-            <img src="./assets/images/facebook.svg" alt="icon" />
-            <img src="./assets/images/instagram.svg" alt="icon" />
-            <img src="./assets/images/twitter.svg" alt="icon" />
-            <img src="./assets/images/tiktok.svg" alt="icon" />
-          </div>
-          <p>سياسة الخصوصية | الشروط والاحكام</p>
-        </div>
-      </footer>
+      <div id="footer-placeholder"></div>
     </div>
+    <!-- <script src="js/header.js"></script> -->
+    <script src="js/loadComponents.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/carSlider.js"></script>
   </body>
 </html>

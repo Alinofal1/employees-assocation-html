@@ -1,0 +1,141 @@
+#lendingServicesSection {
+  margin-bottom: 180px;
+}
+
+#lendingCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 64px;
+  gap: 30px;
+}
+
+#lending-services h2 {
+  margin-bottom: 45px;
+}
+
+#servicesParagraph2 {
+  margin-bottom: 40px;
+}
+
+.lendingContent {
+  width: 423px;
+  border-radius: 30px;
+  border-width: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+  border: 1px solid #1111111a;
+  box-shadow: 0px 0px 15px 0px #00000005;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lendingContent:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#lendingText a {
+  text-decoration: none;
+  color: black;
+}
+
+#lendingText h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 156%;
+  text-align: center;
+}
+
+#lendingText p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 204%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.lendingContent img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 76px;
+}
+
+/* responsive */
+
+/* Mobile Screen */
+@media (max-width: 767px) {
+  #lending-services h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #lending-services p {
+    margin: auto 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #lendingCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lendingContent {
+    width: 323px;
+  }
+
+  .lendingContent img {
+    margin-top: 56px;
+  }
+
+  #lendingText h2 {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #lendingText p {
+    font-size: 10px;
+    margin-bottom: 58px;
+  }
+}
+
+/* Tablet Screen */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #lending-services h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #lending-services p {
+    margin: auto 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+/* Small Laptop Screen */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #lending-services h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #lending-services p {
+    margin: auto 20px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #lendingCards {
+    justify-content: center;
+  }
+}

@@ -66,26 +66,6 @@
   margin: auto 17px;
 }
 
-/* Hero styling */
-#whoweare-hero {
-  max-width: 1367px;
-  margin: auto;
-  margin-top: 86px;
-  margin-bottom: 166px;
-}
-
-.whoweare-heroContent p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 178%;
-  text-align: right;
-}
-
-#heroCards {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 /* Mobile screen */
 @media (max-width: 767px) {
   .gray1,
@@ -93,36 +73,27 @@
   .gray3 {
     display: none;
   }
+
+  .greenHeader {
+    height: 90px;
+  }
+
   .greenColor {
     width: 100vw;
+    height: 100%;
   }
   .greenTitle {
     width: 520px;
     margin: 20px auto;
     text-align: center;
   }
+  .greenTitle h2 {
+    font-weight: 600;
+    font-size: 15px;
+  }
   .greenTitle div p {
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
-  }
-
-  .whoweare-heroContent {
-    width: 90vw;
-    margin: auto;
-  }
-
-  .whoweare-heroContent p {
-    font-size: 15px;
-    text-align: center;
-  }
-  #whoweare-hero {
-    margin-bottom: 0;
-  }
-  #heroCards {
-    flex-direction: column;
-  }
-  #heroCards img {
-    width: 100%;
   }
 }
 
@@ -142,31 +113,17 @@
     margin: 20px auto;
     text-align: center;
   }
-  .greenTitle div p {
-    font-size: 17px;
-    text-align: center;
-  }
-
-  .whoweare-heroContent {
-    width: 90vw;
-    margin: auto;
-  }
-
-  .whoweare-heroContent p {
+  .greenTitle h2 {
+    font-weight: 600;
     font-size: 20px;
+  }
+  .greenTitle div p {
+    font-size: 15px;
     text-align: center;
-  }
-  #whoweare-hero {
-    margin-bottom: 0;
-  }
-  #heroCards {
-    flex-direction: column;
-  }
-  #heroCards img {
-    width: 100%;
   }
 }
 
+/* Small Laptop Screen */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .gray1,
   .gray2,
@@ -179,21 +136,7 @@
   }
   .greenTitle div p {
     font-size: 20px;
-    text-align: center;
-  }
-
-  .whoweare-heroContent p {
-    font-size: 20px;
-    text-align: center;
-  }
-  #whoweare-hero {
-    margin-bottom: 0;
-  }
-  #heroCards {
-    flex-direction: column;
-  }
-  #heroCards img {
-    width: 100%;
+    text-align: right;
   }
 }
 
@@ -210,22 +153,6 @@
   .greenTitle div p {
     font-size: 20px;
     text-align: center;
-  }
-
-  .whoweare-heroContent p {
-    font-size: 20px;
-    text-align: center;
-  }
-  .whoweare-heroContent {
-    width: 90vw;
-    margin: auto;
-  }
-  #whoweare-hero {
-    margin-bottom: 0;
-  }
-  #heroCards img {
-    width: 47vw;
-    margin: auto;
   }
 }
 

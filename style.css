@@ -13,3 +13,17 @@ body {
 .container {
   width: 100%;
 }
+
+.heroh2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 178%;
+  text-align: right;
+}
+
+.heropara {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 156%;
+  text-align: right;
+}

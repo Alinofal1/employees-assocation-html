@@ -88,8 +88,12 @@ nav {
   font-size: 20px;
   margin: auto;
 }
+#navList > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
 
-#navList ul li:hover {
+#navList > ul > li > a:hover {
   color: #be2631;
   transition-duration: 300ms;
   cursor: pointer;
@@ -110,6 +114,47 @@ body {
 
 .openClose:hover {
   cursor: pointer;
+}
+/* Drop down */
+.drop-down-menu a {
+  position: relative;
+  padding: 10px 0;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  flex-direction: column;
+  background-color: white;
+  width: 160px;
+  border: 1px solid #1111111a;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px 0px #0000001a;
+  margin-top: 10px;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.drop-down-menu:hover .dropdown-content {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.dropdown-content a {
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  transition-duration: 300ms;
+}
+
+.dropdown-content a:hover {
+  color: #a9212a;
+  background-color: #d8d8d8;
 }
 
 /* Mobile Menu */
@@ -285,6 +330,45 @@ body.no-scroll {
   cursor: pointer;
 }
 
+.library-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.arrow {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.library-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: #f9f9f9;
+  padding-right: 30px;
+}
+
+.library-menu li a {
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.library-dropdown.open .arrow {
+  transform: rotate(90deg);
+}
+
+.library-dropdown.open .library-menu {
+  max-height: 300px;
+}
+
 /* Mobile Header */
 @media (max-width: 767px) {
   #navList {
@@ -438,6 +522,10 @@ body.no-scroll {
     font-weight: 600;
     font-size: 15px;
     margin: auto;
+  }
+  #navList ul li a {
+    text-decoration: none;
+    color: black;
   }
   #navList ul li:hover {
     color: #be2631;

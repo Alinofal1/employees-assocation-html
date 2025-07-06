@@ -1,0 +1,359 @@
+/* Hero styling */
+.heroContainer {
+  max-width: 1367px;
+  margin: auto;
+  margin-top: 76px;
+  margin-bottom: 180px;
+}
+
+#heroCards {
+  display: flex;
+  align-items: center;
+  gap: 7.4%;
+  margin-top: 55px;
+}
+
+/* Card One */
+#card1 {
+  position: relative;
+  display: flex;
+}
+
+#redRightPart {
+  width: 100%;
+  max-width: 234px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  z-index: 1;
+}
+
+#whoweare-redContent {
+  position: relative;
+  width: 583px;
+  height: 141px;
+  border-radius: 68.5px;
+  border: 2px solid #8c8c8c40;
+  top: 49.85px;
+  left: 8.23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-9.5%);
+}
+
+#whoweare-redContent h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: right;
+  color: #bd262b;
+}
+
+#whoweare-redContent p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 178%;
+  text-align: right;
+}
+
+#whoweare-innerCardContent {
+  width: 356px;
+  height: 66px;
+  transform: translate(-16%);
+}
+
+#redTail {
+  width: 100%;
+  max-width: 165px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-33%, 63%);
+}
+
+/* Card Two */
+#card2 {
+  position: relative;
+  display: flex;
+}
+
+#greenRightPart {
+  width: 100%;
+  max-width: 197px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  z-index: 1;
+}
+
+#whoweare-greenContent {
+  position: relative;
+  width: 583px;
+  height: 141px;
+  border-radius: 68.5px;
+  border: 2px solid #8c8c8c40;
+  top: 49.85px;
+  left: 8.23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-9.5%);
+}
+
+#whoweare-greenContent h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: right;
+  color: #46974e;
+}
+
+#whoweare-greenContent p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 178%;
+  text-align: right;
+}
+
+#whoweare-innerCardContent2 {
+  width: 356px;
+  height: 66px;
+  transform: translate(-16%);
+}
+
+#greenTail {
+  width: 100%;
+  max-width: 165px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-33%, 63%);
+}
+
+/* Responsive */
+
+/* Mobile Screen */
+@media (max-width: 767px) {
+  .whoweare-heroContent {
+    width: 90vw;
+    margin: auto;
+  }
+
+  .whoweare-heroContent p {
+    font-size: 15px;
+    text-align: center;
+  }
+  #whoweare-hero {
+    margin-bottom: 0;
+  }
+  #heroCards {
+    flex-direction: column;
+  }
+  /* card1 */
+  #card1 {
+    margin-top: -45px;
+  }
+
+  #redRightPart {
+    display: none;
+  }
+
+  #whoweare-redContent {
+    position: relative;
+    width: 340px;
+    height: 100px;
+    border-radius: 68.5px;
+    border: 2px solid #8c8c8c40;
+    top: 39.85px;
+    left: 4.23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0%);
+  }
+
+  #whoweare-redContent h2 {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #whoweare-redContent p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  #whoweare-innerCardContent {
+    width: 336px;
+    height: 46px;
+    transform: translate(0%);
+  }
+
+  #redTail {
+    width: 100%;
+    max-width: 114px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0%, 69%);
+  }
+
+  /* card2 */
+  #card2 {
+    margin-top: 65px;
+  }
+
+  #greenRightPart {
+    display: none;
+  }
+
+  #whoweare-greenContent {
+    position: relative;
+    width: 340px;
+    height: 100px;
+    border-radius: 68.5px;
+    border: 2px solid #8c8c8c40;
+    top: 39.85px;
+    left: 4.23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0%);
+  }
+
+  #whoweare-greenContent h2 {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #whoweare-greenContent p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  #whoweare-innerCardContent2 {
+    width: 336px;
+    height: 46px;
+    transform: translate(0%);
+  }
+
+  #greenTail {
+    width: 100%;
+    max-width: 114px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0%, 69%);
+  }
+}
+
+/* Tablet Screen */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .whoweare-heroContent {
+    width: 90vw;
+    margin: auto;
+  }
+
+  .whoweare-heroContent p {
+    font-size: 15px;
+    text-align: center;
+  }
+  #whoweare-hero {
+    margin-bottom: 0;
+  }
+
+  #whoweare-redContent {
+    width: 500px;
+  }
+
+  #redTail {
+    max-width: 150px;
+    transform: translate(-29%, 63%);
+  }
+  #redRightPart {
+    width: 100%;
+    max-width: 209px;
+    top: 16px;
+  }
+
+  #whoweare-greenContent {
+    width: 500px;
+  }
+
+  #greenTail {
+    max-width: 150px;
+    transform: translate(-29%, 63%);
+  }
+  #greenRightPart {
+    width: 100%;
+    max-width: 180px;
+    top: 16px;
+  }
+
+  #whoweare-innerCardContent {
+    width: 290px;
+    height: 75px;
+    transform: translate(-29%);
+  }
+
+  #whoweare-innerCardContent2 {
+    width: 343px;
+    height: 66px;
+    transform: translate(-24%);
+  }
+
+  #heroCards {
+    flex-direction: column;
+    margin-bottom: 90px;
+    gap: 100px;
+  }
+  #heroCards img {
+    width: 100%;
+  }
+}
+
+/* Small Laptop Screen */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .whoweare-heroContent {
+    width: 90vw;
+    margin: auto;
+  }
+  .whoweare-heroContent p {
+    font-size: 20px;
+    text-align: center;
+  }
+  #whoweare-hero {
+    margin-bottom: 0;
+  }
+  #heroCards {
+    flex-direction: column;
+    gap: 100px;
+  }
+  #heroCards img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1400px) {
+  .whoweare-heroContent p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .whoweare-heroContent {
+    width: 90vw;
+    margin: auto;
+  }
+  #whoweare-hero {
+    margin-bottom: 0;
+  }
+  #heroCards img {
+    width: 47vw;
+    margin: auto;
+  }
+}

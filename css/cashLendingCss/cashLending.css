@@ -1,0 +1,173 @@
+.lending-container {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 76px;
+  margin-bottom: 180px;
+}
+
+#cash-lending-services h2 {
+  margin-bottom: 30px;
+}
+
+#form {
+  margin-top: 52px;
+  margin-bottom: 113px;
+}
+
+#form h2 {
+  margin-bottom: 30px;
+}
+
+#pdfContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+#pdf-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 660px;
+  border: 0.5px solid #8c8c8c80;
+  border-radius: 15px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+
+#pdf-right,
+#pdf-left {
+  display: flex;
+  align-items: center;
+}
+
+#pdf-right img {
+  width: 48px;
+  height: 48px;
+  margin: 20px 0 20px 15px;
+}
+
+#pdf-right img:hover {
+  cursor: pointer;
+}
+
+#pdf-right p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 156%;
+  text-align: right;
+}
+
+#pdf-left {
+  gap: 13px;
+}
+#pdf-left img {
+  transition: 0.4s;
+}
+
+#pdf-left img:hover {
+  cursor: pointer;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+  #cash-lending-services h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #cash-lending-services p {
+    margin: auto 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #form h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #pdf-form {
+    width: 100%;
+    margin: auto 10px;
+  }
+
+  #pdfContainer {
+    justify-content: center;
+  }
+
+  #pdf-right img {
+    width: 38px;
+    height: 38px;
+    margin: 20px 0 20px 15px;
+  }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #cash-lending-services h2 {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #cash-lending-services p {
+    margin: auto 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #form h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #pdf-form {
+    width: 100%;
+    margin: auto 10px;
+  }
+
+  #pdfContainer {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  #cash-lending-services h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  #cash-lending-services p {
+    margin: auto 10px;
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  #form h2 {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  #pdfContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: auto 10px;
+  }
+
+  #pdf-form {
+    width: 100%;
+    margin: auto 10px;
+  }
+}

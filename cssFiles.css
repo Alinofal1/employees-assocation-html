@@ -10,3 +10,37 @@
 
 /* who we are page styles */
 @import url("./css/whoWeAreCss/greenHeader.css");
+@import url("./css/whoWeAreCss/whoweareContent.css");
+
+/* Board Directions */
+@import url("./css/board-of-directors/board-of-directions.css");
+
+/* services styles */
+@import url("./css/servicesCss/services2.css");
+
+/* Lending services styles */
+@import url("./css/lendingServicesCss/lendingServices.css");
+
+/* cash Lending styles */
+@import url("./css/cashLendingCss/cashLending.css");
+
+/* in-kind-loan Styling */
+@import url("./css/in-kind-loan-css/in-kind-loan.css");
+
+/* Membership Styling */
+@import url("./css/memberShipCss/memberShip.css");
+
+/* The News Cards Styling */
+@import url("/css/theNewsCardsCss/theNewsCards.css");
+
+/* Call Us Styling */
+@import url("/css/contactUs/contactUs.css");
+
+/* media Photos Styling */
+@import url("./css/mediaCss/media.css");
+
+/* annual-reports styling */
+@import url("/css/annual-reports/annual-reports.css");
+
+/* videos styling */
+@import url("/css/videoscss/videos.css");
