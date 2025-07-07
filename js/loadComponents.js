@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="header-wrapper">
           <!-- Right Logo -->
           <a href="/">
-            <h1>
+            <h1 id="logoh1">
               <img src="../assets/images/logo.png" alt="logo" id="logo" />
             </h1>
           </a>

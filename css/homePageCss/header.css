@@ -29,7 +29,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 10px;
+}
+
+#logoh1 {
+  margin-top: 5px;
 }
 
 #leftBtn:hover {
@@ -39,7 +43,7 @@ nav {
 #leftBtn img {
   width: 30px;
   margin: 8px 0;
-  margin-right: 8px;
+  margin-right: -5px;
 }
 
 #leftBtn p {
