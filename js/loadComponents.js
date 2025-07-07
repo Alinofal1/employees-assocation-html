@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <li class="drop-down-menu">
             <a>
             المكتبة الالكترونية
+            <img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="arrow" class="desktop-arrow">
             </a>
             <div class="dropdown-content">
             <a href="/pages/electronic-library-files.html">الملفات</a>
@@ -26,7 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
             </li>
             
              <li class="drop-down-menu">
-            <a>ميديا</a>
+             <a>
+             ميديا
+             <img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="arrow" class="desktop-arrow">
+            </a>
             <div class="dropdown-content">
             <a href="/pages/media.html"> الصور</a>
             <a href="/pages/theNews.html"> الاخبار</a>
@@ -37,8 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <li><a href="/pages/contact-us.html">اتصل بنا</a></li>
             </ul>
             <div id="searchLogo">
-              <img src="../assets/images/searchIcon.svg" alt="search svg" />
+            <img src="../assets/images/searchIcon.svg" alt="search svg" />
             </div>
+            <img src="/assets/images/language-icon.png" alt="search svg" class="language"/>
           </div>
           <!-- left Button -->
           <div id="leftBtn">

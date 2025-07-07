@@ -22,7 +22,7 @@ body {
 
 #footerList {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 37px;
   margin-bottom: 27px;
@@ -51,14 +51,7 @@ body {
   content: "";
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-    to right,
-    #787878,
-    #787878,
-    #262626,
-    #8c8c8c,
-    #8c8c8c
-  );
+  background-color: rgb(200, 200, 200);
   height: 1px;
 }
 
@@ -81,11 +74,13 @@ body {
 }
 
 #footerBottom p:first-child {
+  font-size: 15px;
   text-align: right;
   justify-self: start;
 }
 
 #footerBottom p:last-child {
+  font-size: 15px;
   text-align: left;
   justify-self: end;
 }
@@ -94,10 +89,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 21px;
+  gap: 5px;
+}
+
+#socialMedia img {
+  width: 30px;
+  height: 30px;
 }
 
 #socialMedia img:hover {
+  border-radius: 50%;
+  border: 0.5px solid #4da05b;
   cursor: pointer;
 }
 
@@ -106,6 +108,7 @@ body {
   #footerList {
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 25px;
     margin-top: 7px;
@@ -137,6 +140,7 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   #footerList {
     flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
     padding: 0 15px;
   }
@@ -161,6 +165,7 @@ body {
 @media (min-width: 1025px) and (max-width: 1280px) {
   #footerList {
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     padding: 0 15px;
   }

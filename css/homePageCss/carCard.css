@@ -4,7 +4,7 @@
   height: 477px;
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 40px;
   border-radius: 30px;
   background: linear-gradient(to right, #676767, #ffffff, #f2f2f2);
   overflow: hidden;
@@ -55,8 +55,8 @@
 }
 
 #carSlider div {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 100%;
   background-color: #28282859;
   cursor: pointer;
@@ -93,23 +93,26 @@
 }
 
 #carText {
-  width: 546px;
-  margin-right: 45px;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 156%;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#carText div {
+  margin-bottom: 30px;
 }
 
 #carText h2 {
   font-weight: 700;
-  font-size: 27px;
+  font-size: 25px;
   line-height: 156%;
   text-align: right;
 }
 
 #carText p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 156%;
   text-align: right;
 }
@@ -125,11 +128,10 @@
 .pal-service2 p {
   width: 100%;
   max-width: 477px;
-  font-weight: 500;
-  font-size: 23px;
+  font-weight: 700;
+  font-size: 25px;
   text-align: end;
-  direction: ltr;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 /*  Mobile View  */

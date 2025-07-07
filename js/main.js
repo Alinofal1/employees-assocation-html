@@ -50,7 +50,7 @@ function changeSlide(index) {
     slidesData[index].buttonText;
 
   sliderImages.forEach((img, i) => {
-    img.style.border = i === index ? "7px solid #b7312b" : "none";
+    img.style.border = i === index ? "4px solid #b7312b" : "none";
   });
 }
 

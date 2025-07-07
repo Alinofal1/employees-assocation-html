@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .ServicesHead {
@@ -15,13 +15,13 @@
 
 .ServicesHead h2 {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .ServicesHead p {
   font-weight: 300;
-  font-size: 20px;
-  margin-top: 15px;
+  font-size: 15px;
+  margin-top: 5px;
 }
 
 .services h2 span {
