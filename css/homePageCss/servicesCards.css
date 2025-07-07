@@ -17,14 +17,15 @@
 .cardContent img {
   width: 132px;
   height: 132px;
-  margin: 15px 30px;
+  margin: 15px 0;
+  margin-right: 30px;
 }
 
 #cardText {
   margin: 25px auto;
   margin-left: 25px;
   text-align: right;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 #cardText h2 {

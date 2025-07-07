@@ -40,15 +40,18 @@ document.addEventListener("DOMContentLoaded", function () {
             <li><a href="/pages/membership.html">العضوية</a></li>
             <li><a href="/pages/contact-us.html">اتصل بنا</a></li>
             </ul>
-            <div id="searchLogo">
+          </div>
+          <!-- left side -->
+          <div id="leftsideHead">
+          <div id="searchLogo">
             <img src="../assets/images/searchIcon.svg" alt="search svg" />
             </div>
             <img src="/assets/images/language-icon.png" alt="search svg" class="language"/>
-          </div>
-          <!-- left Button -->
+
           <div id="leftBtn">
             <img src="../assets/images/inquiry.svg" alt="svg" id="navSvg" />
             <p>استعلام</p>
+          </div>
           </div>
         </div>
       </div>
@@ -209,29 +212,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Search functionality
-  const searchLogo = document.querySelector("#navList #searchLogo");
-  const searchWrapper = document.getElementById("desktopSearchWrapper");
-  const closeSearchBtn = document.getElementById("closeSearchBtn");
+  // const searchLogo = document.querySelector("#navList #searchLogo");
+  // const searchWrapper = document.getElementById("desktopSearchWrapper");
+  // const closeSearchBtn = document.getElementById("closeSearchBtn");
 
-  if (searchLogo && searchWrapper && closeSearchBtn) {
-    // Open search bar
-    searchLogo.addEventListener("click", () => {
-      searchWrapper.classList.remove("hidden");
-      searchWrapper.classList.add("show-search");
-      document.body.classList.add("no-scroll");
-    });
+  // if (searchLogo && searchWrapper && closeSearchBtn) {
+  //   // Open search bar
+  //   searchLogo.addEventListener("click", () => {
+  //     searchWrapper.classList.remove("hidden");
+  //     searchWrapper.classList.add("show-search");
+  //     document.body.classList.add("no-scroll");
+  //   });
 
-    // Close search bar
-    closeSearchBtn.addEventListener("click", () => {
-      searchWrapper.classList.remove("show-search");
-      searchWrapper.classList.add("hidden");
-      document.body.classList.remove("no-scroll");
-    });
-  } else {
-    console.error(
-      "One or more elements for the search functionality are missing."
-    );
-  }
+  //   // Close search bar
+  //   closeSearchBtn.addEventListener("click", () => {
+  //     searchWrapper.classList.remove("show-search");
+  //     searchWrapper.classList.add("hidden");
+  //     document.body.classList.remove("no-scroll");
+  //   });
+  // } else {
+  //   console.error(
+  //     "One or more elements for the search functionality are missing."
+  //   );
+  // }
 });
 
 // Library dropdown

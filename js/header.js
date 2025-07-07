@@ -32,18 +32,18 @@ window.addEventListener("resize", () => {
 });
 
 // input search
-const searchLogo = document.querySelector("#navList #searchLogo");
-const searchWrapper = document.getElementById("desktopSearchWrapper");
-const closeSearchBtn = document.getElementById("closeSearchBtn");
+// const searchLogo = document.querySelector("#navList #searchLogo");
+// const searchWrapper = document.getElementById("desktopSearchWrapper");
+// const closeSearchBtn = document.getElementById("closeSearchBtn");
 
-searchLogo?.addEventListener("click", () => {
-  searchWrapper.classList.remove("hidden");
-  searchWrapper.classList.add("show-search");
-  document.body.classList.add("no-scroll");
-});
+// searchLogo?.addEventListener("click", () => {
+//   searchWrapper.classList.remove("hidden");
+//   searchWrapper.classList.add("show-search");
+//   document.body.classList.add("no-scroll");
+// });
 
-closeSearchBtn?.addEventListener("click", () => {
-  searchWrapper.classList.remove("show-search");
-  searchWrapper.classList.add("hidden");
-  document.body.classList.remove("no-scroll");
-});
+// closeSearchBtn?.addEventListener("click", () => {
+//   searchWrapper.classList.remove("show-search");
+//   searchWrapper.classList.add("hidden");
+//   document.body.classList.remove("no-scroll");
+// });
