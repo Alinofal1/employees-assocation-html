@@ -7,7 +7,7 @@
 }
 
 .cardContent {
-  width: 659px;
+  width: 660px;
   display: flex;
   align-items: center;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
@@ -21,21 +21,22 @@
 }
 
 #cardText {
-  width: 373px;
+  margin: 25px auto;
+  margin-left: 25px;
   text-align: right;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 #cardText h2 {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 20px;
 }
 
 #cardText p {
   font-weight: 300;
-  font-size: 15px;
-  width: 370px;
-  line-height: 204%;
+  font-size: 16px;
+  line-height: 165%;
 }
 
 /* Mobile View */

@@ -62,13 +62,17 @@ nav {
 
 #searchLogo {
   background-color: #be2631;
-  border-radius: 41px;
+  border-radius: 40px;
   width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
+  /* margin-right: 30px; */
+}
+#header-icons {
+  display: flex;
+  align-items: center;
 }
 
 #searchLogo:hover {
