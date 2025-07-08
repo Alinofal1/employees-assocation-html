@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  margin-top: 76px;
+  margin-top: 50px;
   margin-bottom: 180px;
 }
 
@@ -16,7 +16,7 @@
 
 #memberShip-para {
   line-height: 156%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #membersihpSvgs {
@@ -80,35 +80,8 @@
   line-height: 156%;
 }
 
-#memberCondetion h2 {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 156%;
-  text-align: right;
-  margin-bottom: 30px;
-}
-
 #memberCondetion p {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 156%;
-  text-align: right;
   margin-bottom: 40px;
-}
-
-#memberDisable h2 {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 156%;
-  text-align: right;
-  margin-bottom: 30px;
-}
-
-#memberDisable p {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 156%;
-  text-align: right;
 }
 
 /* Mobile Screen */

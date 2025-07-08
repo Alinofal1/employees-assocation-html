@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1350px;
   margin: auto;
-  margin-top: 76px;
+  margin-top: 50px;
   margin-bottom: 134px;
 }
 
@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 40px;
+  gap: 20px;
 }
 .parent1 > * {
   display: flex;

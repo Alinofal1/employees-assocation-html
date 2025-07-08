@@ -2,9 +2,9 @@ function renderGreenHeader(titleText, innerText) {
   const headerHTML = `
     <div class="greenHeader">
       <div class="greenTitle">
-        <h2>${titleText}</h2>
+        <h2>${innerText}</h2>
         <div>
-          <p id="greenpara">الرئيسية <span>&gt;</span> ${titleText} <span>&gt;</span> ${innerText}</p>
+          <p id="greenpara">الرئيسية <span>&gt;</span> ${titleText} <span>&gt;</span> <span class="active-title">${innerText}</span></p>
         </div>
       </div>
       <div class="greenColor">

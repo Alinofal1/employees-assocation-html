@@ -216,10 +216,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let logo = document.getElementById("logo");
   let navContainer = document.querySelector(".navContainer");
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      headerPlaceholder.classList.add("headerShadow");
-    } else headerPlaceholder.classList.remove("headerShadow");
-
     if (window.scrollY > 200) {
       navContainer.classList.remove("navContainer");
       navContainer.classList.add("navContainerScroll");
