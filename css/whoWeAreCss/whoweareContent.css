@@ -46,13 +46,14 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 100%;
+  margin-bottom: 10px;
   text-align: right;
   color: #bd262b;
 }
 
 #whoweare-redContent p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 178%;
   text-align: right;
 }
@@ -60,7 +61,7 @@
 #whoweare-innerCardContent {
   width: 356px;
   height: 66px;
-  transform: translate(-16%);
+  transform: translate(-16%, -12%);
 }
 
 #redTail {
@@ -103,6 +104,7 @@
 
 #whoweare-greenContent h2 {
   font-weight: 700;
+  margin-bottom: 10px;
   font-size: 20px;
   line-height: 100%;
   text-align: right;
@@ -111,7 +113,7 @@
 
 #whoweare-greenContent p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 178%;
   text-align: right;
 }
@@ -119,7 +121,7 @@
 #whoweare-innerCardContent2 {
   width: 356px;
   height: 66px;
-  transform: translate(-16%);
+  transform: translate(-16%, -12%);
 }
 
 #greenTail {

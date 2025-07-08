@@ -28,10 +28,10 @@ nav {
   right: 0;
   left: 0;
   z-index: 999;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .headerShadow {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .searchInput {
@@ -133,7 +133,7 @@ nav {
   display: block;
   padding: 3.5px 0;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
   margin: auto;
 }

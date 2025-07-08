@@ -1,14 +1,12 @@
 .greenHeader {
-  border-width: 0.5px 0px 0.5px 0px;
-  border-style: solid;
-  border-color: #8c8c8c80;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
 }
 .greenColor {
-  width: 960px;
-  height: 166px;
+  width: 760px;
+  height: 150px;
   background-color: #4da05b;
   position: relative;
 }
@@ -24,17 +22,17 @@
 
 .gray1 {
   width: 8px;
-  left: 905px;
+  left: 705px;
 }
 
 .gray2 {
   width: 16px;
-  left: 918px;
+  left: 718px;
 }
 
 .gray3 {
   width: 22px;
-  left: 939px;
+  left: 739px;
 }
 
 /* Green Header Title */
@@ -45,7 +43,7 @@
 
 .greenTitle h2 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 156%;
   margin-bottom: 10px;
 }
@@ -53,7 +51,7 @@
 .greenTitle div p {
   color: #787878;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 156%;
   text-align: right;
 }
@@ -63,7 +61,7 @@
   font-size: 20px;
   line-height: 156%;
   text-align: right;
-  margin: auto 17px;
+  margin: auto 5px;
 }
 
 /* Mobile screen */
