@@ -23,16 +23,15 @@ const servicesData = [
 const lendingCards = document.getElementById("lendingCards");
 
 servicesData.forEach((item) => {
-  const card = document.createElement("div");
+  const card = document.createElement("a");
   card.className = "lendingContent";
+  card.setAttribute("href", item.href);
 
   card.innerHTML = `
     <img src="${item.img}" alt="${item.title}" />
     <div id="lendingText">
-      <a href="${item.href}">
         <h2>${item.title}</h2>
         <p>${item.desc}</p>
-      </a>
     </div>
   `;
 
