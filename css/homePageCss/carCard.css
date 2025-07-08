@@ -99,10 +99,6 @@
   justify-content: space-between;
 }
 
-#carText div {
-  /* margin-bottom: 30px; */
-}
-
 #carText h2 {
   font-weight: 700;
   font-size: 25px;
@@ -122,7 +118,7 @@
   font-size: 20px;
   color: #656565;
   margin-top: 8px;
-  margin-bottom: 53px;
+  margin-bottom: 20px;
 }
 
 .pal-service2 p {

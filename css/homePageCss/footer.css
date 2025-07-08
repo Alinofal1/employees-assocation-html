@@ -33,7 +33,7 @@ body {
   display: block;
   margin-top: 16px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 156%;
 }
 #footerList li a {
@@ -51,13 +51,13 @@ body {
   content: "";
   display: flex;
   flex-direction: column;
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(240, 240, 240);
   height: 1px;
 }
 
 #footerBottom {
   width: 1350px;
-  margin: 18px auto;
+  margin: 10px auto;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;

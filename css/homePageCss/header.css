@@ -10,6 +10,28 @@ nav {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  transition: height 0.4s ease-in-out;
+}
+
+.navContainerScroll {
+  height: 60px;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+}
+
+#header-placeholder {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.headerShadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .searchInput {
@@ -127,8 +149,9 @@ nav {
 }
 
 #logo {
-  width: 148px;
-  height: 81px;
+  width: 120px;
+  height: 70px;
+  transition: width 0.4s ease, height 0.4s ease;
 }
 
 body {

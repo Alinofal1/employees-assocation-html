@@ -211,30 +211,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Search functionality
-  // const searchLogo = document.querySelector("#navList #searchLogo");
-  // const searchWrapper = document.getElementById("desktopSearchWrapper");
-  // const closeSearchBtn = document.getElementById("closeSearchBtn");
+  // add shadow and make header smaller on scroll
+  let headerPlaceholder = document.getElementById("header-placeholder");
+  let logo = document.getElementById("logo");
+  let navContainer = document.querySelector(".navContainer");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      headerPlaceholder.classList.add("headerShadow");
+    } else headerPlaceholder.classList.remove("headerShadow");
 
-  // if (searchLogo && searchWrapper && closeSearchBtn) {
-  //   // Open search bar
-  //   searchLogo.addEventListener("click", () => {
-  //     searchWrapper.classList.remove("hidden");
-  //     searchWrapper.classList.add("show-search");
-  //     document.body.classList.add("no-scroll");
-  //   });
-
-  //   // Close search bar
-  //   closeSearchBtn.addEventListener("click", () => {
-  //     searchWrapper.classList.remove("show-search");
-  //     searchWrapper.classList.add("hidden");
-  //     document.body.classList.remove("no-scroll");
-  //   });
-  // } else {
-  //   console.error(
-  //     "One or more elements for the search functionality are missing."
-  //   );
-  // }
+    if (window.scrollY > 200) {
+      navContainer.classList.remove("navContainer");
+      navContainer.classList.add("navContainerScroll");
+      logo.style.width = "90px";
+      logo.style.height = "50px";
+    } else {
+      navContainer.classList.add("navContainer");
+      navContainer.classList.remove("navContainerScroll");
+      logo.style.width = "120px";
+      logo.style.height = "70px";
+    }
+  });
 });
 
 // Library dropdown
