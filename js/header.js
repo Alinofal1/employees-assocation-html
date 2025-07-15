@@ -30,20 +30,3 @@ window.addEventListener("resize", () => {
     document.body.classList.remove("no-scroll");
   }
 });
-
-// input search
-// const searchLogo = document.querySelector("#navList #searchLogo");
-// const searchWrapper = document.getElementById("desktopSearchWrapper");
-// const closeSearchBtn = document.getElementById("closeSearchBtn");
-
-// searchLogo?.addEventListener("click", () => {
-//   searchWrapper.classList.remove("hidden");
-//   searchWrapper.classList.add("show-search");
-//   document.body.classList.add("no-scroll");
-// });
-
-// closeSearchBtn?.addEventListener("click", () => {
-//   searchWrapper.classList.remove("show-search");
-//   searchWrapper.classList.add("hidden");
-//   document.body.classList.remove("no-scroll");
-// });

@@ -93,7 +93,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-right: 30px; */
 }
 #header-icons {
   display: flex;
@@ -346,7 +345,6 @@ body.no-scroll {
 /* Desktop Search */
 #desktopSearchWrapper {
   position: fixed;
-  /* top: 138px; */
   left: 0;
   width: 100vw;
   height: calc(100vh - 1px);
