@@ -10,6 +10,7 @@
   padding: 10px;
   height: 40px;
   outline: none;
+  border: 2px solid rgba(66, 73, 82, 0.06);
   margin-left: 10px;
   border-radius: 15px;
 }
