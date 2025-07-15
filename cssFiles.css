@@ -8,6 +8,9 @@
 @import url("./css/homePageCss/newsCard.css");
 @import url("./css/homePageCss/footer.css");
 
+/* search Page */
+@import url("/css/searchPage/searchPage.css");
+
 /* who we are page styles */
 @import url("./css/whoWeAreCss/greenHeader.css");
 @import url("./css/whoWeAreCss/whoweareContent.css");
@@ -44,3 +47,6 @@
 
 /* videos styling */
 @import url("/css/videoscss/videos.css");
+
+/* News Inner Page */
+@import url("/css/newsInnerPage/newsInnerPage.css");

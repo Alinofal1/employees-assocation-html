@@ -43,9 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
           <!-- left side -->
           <div id="leftsideHead">
+          <a href="/pages/searchPage.html">
           <div id="searchLogo">
             <img src="../assets/images/searchIcon.svg" alt="search svg" />
             </div>
+            </a>
             <img src="/assets/images/language-icon.png" alt="search svg" class="language"/>
 
           <div id="leftBtn">

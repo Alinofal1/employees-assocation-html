@@ -29,7 +29,7 @@ newsData.forEach((item) => {
   const card = document.createElement("div");
   card.className = "newsCardsContent";
   card.innerHTML = `
-    <a href="#" class="newsCardLink">
+    <a href="/pages/newsInnerPage.html" class="newsCardLink">
       <img src="${item.img}" alt="${item.title}" class="newsCardsImage" />
       <div class="newsCardText">
         <h1>${item.title}</h1>

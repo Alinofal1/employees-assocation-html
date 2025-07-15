@@ -1,0 +1,72 @@
+.search-page {
+  width: 100%;
+  max-width: 1350px;
+  padding-top: 65px;
+  margin: auto;
+}
+
+#search-bar {
+  width: 90%;
+  padding: 10px;
+  height: 40px;
+  outline: none;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+#search-bar::placeholder {
+  font-family: "Tajawal", sans-serif;
+  color: #777777;
+}
+
+.search-btn {
+  font-family: "Tajawal", sans-serif;
+  padding: 0 40px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #be2631;
+  color: white;
+  font-size: 15px;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 0.5px solid #be2631;
+}
+
+.search-result {
+  margin-top: 55px;
+  margin-bottom: 190px;
+}
+
+.search-result h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: right;
+  margin-bottom: 13px;
+}
+
+.search-result p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  text-align: right;
+  color: #777777;
+  position: relative;
+}
+
+.search-result p::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -20px;
+  height: 1px;
+  background-color: rgb(240, 240, 240);
+}
