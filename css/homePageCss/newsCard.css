@@ -9,7 +9,6 @@
 }
 
 #newsCards {
-  margin-top: 30px;
   display: grid;
   gap: 20px;
   justify-content: center;

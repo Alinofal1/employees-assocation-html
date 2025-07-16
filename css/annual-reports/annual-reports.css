@@ -2,7 +2,6 @@
   width: 100%;
   max-width: 1350px;
   margin: auto;
-  margin-top: 50px;
   margin-bottom: 134px;
 }
 
@@ -54,7 +53,7 @@
 }
 
 .annual-content img {
-  margin-left: 8px;
+  margin-left: 4px;
 }
 
 .annual-content img:hover {
