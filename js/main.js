@@ -123,7 +123,8 @@ const newsCards = document.getElementById("newsCards");
 
 newsData.forEach((item) => {
   const card = document.createElement("div");
-  card.className = "newsCardsContent";
+  card.className = "newsCardsContent border";
+  card.style = "margin-bottom: 50px";
   card.innerHTML = `
     <a href="/pages/newsInnerPage.html" class="newsCardLink">
       <img src="${item.img}" alt="${item.title}" class="newsCardsImage" />

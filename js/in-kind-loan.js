@@ -27,7 +27,7 @@ const newsCards = document.getElementById("in-kind-cards");
 
 newsData.forEach((item) => {
   const card = document.createElement("div");
-  card.className = "newsCardsContent";
+  card.className = "newsCardsContent border";
   card.innerHTML = `
     <a href="/pages/newsInnerPage.html" class="newsCardLink">
       <img src="${item.img}" alt="${item.title}" class="newsCardsImage" />

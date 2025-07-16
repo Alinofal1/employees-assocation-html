@@ -17,10 +17,8 @@
 
 .grid-item-wrapper1 {
   position: relative;
-  background-image: url("/assets/images/mediaphoto.png");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 30px;
   transform: scaleX(-1);
   background-size: cover;
 }

@@ -1,15 +1,6 @@
 footer {
   box-shadow: 0 -4px 20px 0 #5555550d;
-  box-shadow: inset #1111111a;
   overflow-x: hidden;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  width: 100%;
 }
 
 #listWrapper {

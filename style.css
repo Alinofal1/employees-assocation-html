@@ -28,3 +28,7 @@ body {
   line-height: 178%;
   text-align: right;
 }
+
+.border {
+  border-radius: 20px;
+}
