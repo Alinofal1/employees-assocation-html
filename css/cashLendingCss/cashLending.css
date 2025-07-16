@@ -66,9 +66,6 @@
 #pdf-left {
   gap: 13px;
 }
-#pdf-left img {
-  transition: 0.4s;
-}
 
 #pdf-left img:hover {
   cursor: pointer;
