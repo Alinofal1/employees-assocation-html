@@ -89,6 +89,13 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+a {
+  text-decoration: none;
+}
+.viewall {
+  color: gray;
+}
+
 @media (max-width: 767px) {
   #in-kind-loan-content h2 {
     font-weight: 600;

@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <li><a href="/pages/cash-lending.html">التسليف النقدي</a></li>
           <li><a href="/pages/theNews.html">الاخبار</a></li>
           <li><a href="/pages/electronic-forms.html">النماذج الالكترونية</a></li>
-          <li><a href="./board-of-directors.html">مجلس الادارة</a></li>
+          <li><a href="/pages/board-of-directors.html">مجلس الادارة</a></li>
         </ul>
       </div>
       <div id="footerBottom">

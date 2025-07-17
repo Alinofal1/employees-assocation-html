@@ -103,9 +103,8 @@
 #adress-inp {
   width: 610px;
   height: 40px;
-  border: none;
   outline: none;
-  border-bottom: 1px solid #000000;
+  border: 1px solid rgba(66, 73, 82, 0.06);
   gap: 10px;
   border-radius: 6px;
   border-bottom-width: 1px;
@@ -136,9 +135,8 @@
   width: 299px;
   height: 40px;
   padding-right: 10px;
-  border: none;
   outline: none;
-  border-bottom: 1px solid #000000;
+  border: 1px solid rgba(66, 73, 82, 0.06);
   gap: 10px;
   border-radius: 6px;
   border-bottom-width: 1px;
