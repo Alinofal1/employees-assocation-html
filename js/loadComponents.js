@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div id="listWrapper">
         <ul id="footerList">
           <li><a href="/pages/in-kind-loan.html">التسليف العيني</a></li>
-          <li><a href="/pages/electronic-library.html">النماذج الالكترونية</a></li>
+          <li><a href="/pages/electronic-forms.html">النماذج الالكترونية</a></li>
           <li><a href="/pages/annual-reports.html">تقارير سنوية</a></li>
           <li><a href="/pages/financial-reports.html">تقارير مالية</a></li>
           <li><a href="/pages/cash-lending.html">التسليف النقدي</a></li>
