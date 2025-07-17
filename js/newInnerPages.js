@@ -95,5 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
     selector: ".media-wrapper",
     plugins: [lgThumbnail, lgZoom, lgVideo],
     speed: 500,
+    mode: "lg-fade",
+    hideBarsDelay: 3000,
+    preload: 2,
+    zoomFromOrigin: false,
+    actualSize: true,
   });
 });
