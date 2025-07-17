@@ -1,21 +1,21 @@
 // News Cards
 const newsData = [
   {
-    title: "عنوان الخبر ",
+    title: "عنوان الاشتراك ",
     date: "12 حزيران 2025",
     img: "/assets/images/cardsImg.png",
     desc: `تمويل لشراء احتياجاتك من شركائنا (تأمين المركبات، خدمات طبية للأسنان، محروقات…) وتقسيط يصل حتى 12 شهراً
 كهربائية وإلكترونية، أثاث منزلي، صيانة ودهان سيارات، خدمات...`,
   },
   {
-    title: "عنوان الخبر ",
+    title: "عنوان الاشتراك ",
     date: "15 حزيران 2025",
     img: "/assets/images/cardsImg.png",
     desc: `تمويل لشراء احتياجاتك من شركائنا (تأمين المركبات، خدمات طبية للأسنان، محروقات…) وتقسيط يصل حتى 12 شهراً
 كهربائية وإلكترونية، أثاث منزلي، صيانة ودهان سيارات، خدمات...`,
   },
   {
-    title: "عنوان الخبر ",
+    title: "عنوان الاشتراك ",
     date: "20 حزيران 2025",
     img: "/assets/images/cardsImg.png",
     desc: `تمويل لشراء احتياجاتك من شركائنا (تأمين المركبات، خدمات طبية للأسنان، محروقات…) وتقسيط يصل حتى 12 شهراً
@@ -32,7 +32,7 @@ newsData.forEach((item) => {
     <a href="/pages/newsInnerPage.html" class="newsCardLink">
       <img src="${item.img}" alt="${item.title}" class="newsCardsImage" />
       <div class="newsCardText">
-        <h1>${item.title}</h1>
+        <h2>${item.title}</h2>
         <p class="date">${item.date}</p>
         <p class="newsPara">
           ${item.desc} <span>معرفة المزيد</span>

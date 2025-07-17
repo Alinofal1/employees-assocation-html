@@ -51,10 +51,11 @@
   text-align: right;
 }
 
-.newsCardText h1 {
+.newsCardText h2 {
   font-weight: 700;
   font-size: 18px;
   margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .date {
