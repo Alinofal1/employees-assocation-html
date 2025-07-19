@@ -1,29 +1,63 @@
 const pdfData = [
-  { title: "تحليل الاتجاهات السوقية", preview: "#", download: "#" },
-  { title: "تقرير الأداء السنوي", preview: "#", download: "#" },
-  { title: "تقييم المخاطر المالية", preview: "#", download: "#" },
-  { title: "استراتيجيات النمو والتوسع", preview: "#", download: "#" },
+  {
+    title: "تحليل الاتجاهات السوقية",
+    preview: "#",
+    download: "#",
+    detailsPage: "/pages/fillForm.html",
+  },
+  {
+    title: "تقرير الأداء السنوي",
+    preview: "#",
+    download: "#",
+    detailsPage: "/pages/fillForm.html",
+  },
+  {
+    title: "تقييم المخاطر المالية",
+    preview: "#",
+    download: "#",
+    detailsPage: "/pages/fillForm.html",
+  },
+  {
+    title: "استراتيجيات النمو والتوسع",
+    preview: "#",
+    download: "#",
+    detailsPage: "/pages/fillForm.html",
+  },
   { title: "توصيات التحسين والتطوير", preview: "#", download: "#" },
   { title: "مقاييس النجاح الرئيسية", preview: "#", download: "#" },
-  { title: "تحليل الاتجاهات السوقية", preview: "#", download: "#" },
+  {
+    title: "تحليل الاتجاهات السوقية",
+    preview: "#",
+    download: "#",
+    detailsPage: "/pages/fillForm.html",
+  },
   { title: "تقرير الأداء السنوي", preview: "#", download: "#" },
   { title: "تقييم المخاطر المالية", preview: "#", download: "#" },
-  { title: "استراتيجيات النمو والتوسع", preview: "#", download: "#" },
+  {
+    title: "استراتيجيات النمو والتوسع",
+    preview: "#",
+    download: "#",
+    detailsPage: "/pages/fillForm.html",
+  },
   { title: "توصيات التحسين والتطوير", preview: "#", download: "#" },
   { title: "مقاييس النجاح الرئيسية", preview: "#", download: "#" },
 ];
 
 const container = document.getElementById("pdfContainer");
 
-pdfData.forEach((item, index) => {
+pdfData.forEach((item) => {
   const pdfBox = document.createElement("div");
   pdfBox.setAttribute("id", "pdf-form");
 
-  const leftArrowSVG = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#e98a31" viewBox="0 0 24 24">
-      <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-    </svg>
-  `;
+  const leftArrow = item.detailsPage
+    ? `
+      <a href="${item.detailsPage}" class="left-arrow-link">
+        <svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+      </a>
+    `
+    : "";
 
   pdfBox.innerHTML = `
     <div id="pdf-right">
@@ -37,7 +71,7 @@ pdfData.forEach((item, index) => {
       <a href="${item.download}" download>
         <img src="/assets/images/download.svg" alt="download" />
       </a>
-      ${index < 4 ? leftArrowSVG : ""}
+      ${leftArrow}
     </div>
   `;
 

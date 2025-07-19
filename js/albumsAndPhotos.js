@@ -4,7 +4,7 @@ function renderGreenHeader(titleText) {
       <div class="greenTitle">
         <h2>${titleText}</h2>
         <div>
-          <p>الالبومات والصور <span>&gt;</span> ${titleText}</p>
+          <p>الرئيسية <span>&gt;</span> ${titleText}</p>
         </div>
       </div>
       <div class="greenColor">

@@ -1,0 +1,14 @@
+.left-arrow {
+  width: 31px;
+  height: 31px;
+  fill: #be2631;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(66, 73, 82, 0.06);
+  border-radius: 50%;
+}
+
+.left-arrow:hover {
+  border: 1px solid #be2631;
+  border-radius: 50%;
+}

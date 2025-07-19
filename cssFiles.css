@@ -50,3 +50,9 @@
 
 /* News Inner Page */
 @import url("/css/newsInnerPage/newsInnerPage.css");
+
+/* electronic-forms */
+@import url("/css/electronic-forms/electronic-forms.css");
+
+/* fillForm styling */
+@import url("/css/fillForm/fillForm.css");

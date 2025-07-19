@@ -65,8 +65,9 @@
 }
 
 #pdf-left img:hover {
+  transform: scale(1);
   cursor: pointer;
-  border: 1px solid #be2631;
+  border: 0.5px solid #be2631;
   border-radius: 50%;
 }
 
